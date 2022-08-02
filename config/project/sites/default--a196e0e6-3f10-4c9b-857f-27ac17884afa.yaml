@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nl-BE
+name: spelendatabase
+primary: true
+siteGroup: c9c4c4e4-1594-49b6-86fc-377c72c8303a # spelendatabase
+sortOrder: 1

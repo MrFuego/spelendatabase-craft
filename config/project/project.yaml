@@ -1,0 +1,101 @@
+dateModified: 1659382855
+email:
+  fromEmail: no-reply@route-404.be
+  fromName: spelendatabase
+  replyToEmail: no-reply@route-404.be
+  template: ''
+  transportSettings:
+    apiKey: Tg70g9E45IDLB9vxMStnaw
+    subaccount: ''
+    template: ''
+  transportType: perfectwebteam\mailchimptransactional\mail\MailchimpTransactionalAdapter
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    0ae3328f-cf7d-475c-afbe-b3254f0112ea: Register # Register
+    1cc25933-d89f-446d-a114-b66154169e66: 'Materiaal lijst' # Materiaal lijst
+    1fafad87-02cb-4572-8313-1ce585e2bf05: 'Aantal groepen' # Aantal groepen
+    2c5e6922-a62e-4f6e-8354-083e79393c83: 'Spel toevoegen' # Spel toevoegen
+    2c509aa5-68ac-4202-8632-8340a7516dd9: 'Gewone gebruiker' # Gewone gebruiker
+    2f9215d4-56e5-440b-a99f-d505f732a5fb: link # link
+    3cb2bd46-d530-4171-ac8a-071b0492c1ac: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
+    3ecd3071-dffb-4c9a-9434-7f247d325058: 'Spel toevoegen' # Spel toevoegen
+    4a023bf0-7e4d-47d0-b47d-331526fb0d33: fze # fze
+    5c7ffd2c-f680-4e53-ae10-eab3a0435bf4: 'Maximum aantal spelers' # Maximum aantal spelers
+    5c29cdee-b532-4da6-94de-fc4b3ef39467: Terrein # Terrein
+    6a1c89a2-84a5-4ec6-825a-eee41066ca29: Homepage # Homepage
+    6d1b6141-70c2-4c2a-841b-a036eeb10aae: 'Link naar pagina' # Link naar pagina
+    6dfee47b-10a4-4592-bbb5-37c9f1d6d89f: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
+    6ead53d7-0002-4a4a-af83-1c0b3dce0c19: Login # Login
+    6f7119f2-4379-47e0-ba06-f43685d65fff: 'Materiaal item' # Materiaal item
+    8a13966e-c6f9-4bc1-b242-db834badd512: 'Maximum leeftijd' # Maximum leeftijd
+    8cb30964-de8f-4299-9a2b-7e8cfbe03360: Homepage # Homepage
+    8fee1281-9138-49c3-8b8e-5343244c2be3: Common # Common
+    9f4915ff-f144-41f9-b90e-4d517b0950bd: Homepage # Homepage
+    25a453ed-97ea-4480-921e-0c572facc9d3: Uploads # Uploads
+    28ce2114-46d8-4431-a66b-5864db7ab615: 'Spel type' # Spel type
+    33edeee0-e5bd-47bb-a308-f995fd7baec7: url # url
+    38a829e3-b181-49ee-baa2-561b893a6e0a: 'Spel materiaal' # Spel materiaal
+    46d1f524-1888-4252-966d-d33a9d20d89f: Standaard # Standaard
+    71f4e72f-939f-48c3-ade8-a9186988278c: 'Public Schema' # Public Schema
+    89aeda29-7de1-4a24-b237-7ca544556d1a: Speluitleg # Speluitleg
+    95dd9080-1a19-4454-a0b5-7052e0d5e882: 'Overzicht dodemomentspelletjes' # Overzicht dodemomentspelletjes
+    146d3948-abce-4b2f-b9f9-cdf5f7e99597: Bestanden # Bestanden
+    167e8d09-1193-4c1b-88a3-1b072e697bea: 'Minimum leeftijd' # Minimum leeftijd
+    259ec406-30de-46aa-9797-029f8d0f20d2: 'Maximum aantal spelers' # Maximum aantal spelers
+    322bf92a-0dd8-4b01-bdc9-3bb080072db8: 'Overzicht één tegen allen opdrachten' # Overzicht één tegen allen opdrachten
+    332ee3b0-a4d0-4cc4-9d9f-d467ef67b06d: 'Overzicht dodemomentspelletjes' # Overzicht dodemomentspelletjes
+    603f99df-a8db-4297-bbf4-346789d995a3: 'Willekeurig spel' # Willekeurig spel
+    691e3054-1e3e-401f-a831-43f2f43e969d: 'Spel type' # Spel type
+    7813ec25-2f74-44af-b2d4-87056478950a: fze # fze
+    5402668f-57a2-4d2d-a55b-15760b93340f: 'Minimum aantal spelers' # Minimum aantal spelers
+    91772575-2882-41d6-95d7-d5a54d46fb06: 'Thema type' # Thema type
+    a9d03940-ad33-4c4f-8773-a1eb25928afb: 'Overzicht spelen' # Overzicht spelen
+    a196e0e6-3f10-4c9b-857f-27ac17884afa: spelendatabase # spelendatabase
+    b3b5d1d5-4a61-44db-b610-8f74faf95f51: 'Overzicht spelen' # Overzicht spelen
+    b92690fb-549e-494d-8c1b-1481340be882: 'Wachtwoord Reset' # Wachtwoord Reset
+    c9c4c4e4-1594-49b6-86fc-377c72c8303a: spelendatabase # spelendatabase
+    c16c586b-d1cf-4d7d-b9e7-b3d915e296e1: Speelduur # Speelduur
+    cb0443b6-2e43-4d70-b39c-1e9ab6876455: 'Overzicht één tegen allen opdrachten' # Overzicht één tegen allen opdrachten
+    cb5fd577-a260-423e-8777-dc3e59af997d: Intro # Intro
+    cbd07e0a-3383-4035-924b-222116f901cb: 'Willekeurig spel' # Willekeurig spel
+    d18c16ef-3965-4d12-9400-4db1d4c697e4: 'benaming materiaal' # benaming materiaal
+    d94396ce-5586-4fae-adcc-084f65e8ed20: Intensiteit # Intensiteit
+    db756868-c5be-4387-a9ca-36e74e7cfd2c: Login # Login
+    df4ee256-846a-416c-9e10-243b726f0e71: 'Minimum aantal spelers' # Minimum aantal spelers
+    e5c64ea9-1ade-4016-a8b7-9bab6c10d632: Register # Register
+    e586182b-8c3f-4827-8a5a-bb87df1c18cd: naam # naam
+    ec954f96-2299-4b7d-9fbb-97c974832a96: Title # Title
+    f014de6c-fdcb-4f4b-a023-354dbb6a4e5e: 'Wachtwoord Reset' # Wachtwoord Reset
+    f5e119ac-c04b-4593-aeef-f2a70dad5a26: Thema # Thema
+    f8b402c2-1415-4442-ad43-66490a00ab05: 'Terrein type' # Terrein type
+    f2589fc5-09a5-4bc1-8d53-b6688f239a39: Spelen # Spelen
+    f9172996-eb36-48fb-84f8-4f35c3728c65: 'hoeveelheid materiaal' # hoeveelheid materiaal
+    fbc67a4a-697c-4b64-bf27-60d2e76ca405: Spel # Spel
+plugins:
+  mailchimp-transactional:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seomate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: spelendatabase
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: Europe/Brussels

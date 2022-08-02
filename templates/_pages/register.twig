@@ -1,0 +1,72 @@
+{% extends "_layouts/site" %}
+  
+{% block content %}
+
+    <div class="container authentication">
+        <div class="auth__block auth__block-left">
+            
+        </div>
+        <div class="auth__block auth__block-right">
+
+            {# `user` is defined if the form returns validation errors. #}
+            {% set user = user ?? null %}
+
+            <form class="form" method="post" accept-charset="UTF-8">
+                {{ csrfInput() }}
+                {{ actionInput('users/save-user') }}
+                {{ redirectInput('') }}
+
+                <label for="username">Gebruikersnaam</label>
+                {{ input('text', 'username', user.username ?? null, {
+                    id: 'username',
+                    autocomplete: 'username',
+                    class: 'form-input',
+                    placeholder: 'Gebruiker42',
+                }) }}
+                {{ user ? _self.errorList(user.getErrors('username')) }}
+
+                <label for="email">E-mailadres</label>
+                {{ input('email', 'email', user.email ?? null, {
+                    id: 'email',
+                    autocomplete: 'email',
+                    class: 'form-input',
+                    placeholder: 'mijnEmailadres@mail.com',
+                }) }}
+                {{ user ? _self.errorList(user.getErrors('email')) }}
+
+                <label for="password">Wachtwoord</label>
+                {{ input('password', 'password', null, {
+                    id: 'password',
+                    class: 'form-input',
+                    placeholder: 'mijnSuperVeiligWachtwoord',
+                }) }}
+                {{ user ? _self.errorList(user.getErrors('password')) }}
+
+                <button type="submit" class="btn form-button"> 
+                    Registreer 
+                </button>
+
+
+                {% if errorMessage is defined %}
+                    <p>{{ errorMessage }}</p>
+                {% endif %}
+            </form>
+
+            <p class="txt-dark-gray"> Toch al een account?
+                <a class="txt-light-blue" href="{{ url('login') }}">Login</a>
+            </p>
+            <p class="auth__block-right-choice"> Of </p>
+            <button class="btn form-button btn-facebook">
+                Registreer met Facebook
+            </button>
+            <button class="btn form-button btn-twitter">
+                Registreer met Twitter
+            </button>
+            <button class="btn form-button btn-google">
+                Registreer met Google
+            </button>
+        </div>
+    </div>
+
+
+{% endblock %}

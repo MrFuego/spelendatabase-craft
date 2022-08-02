@@ -1,0 +1,43 @@
+fieldLayouts:
+  45e87065-03f7-430f-a07f-43b0403cfeff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f3e10109-043d-4c03-a403-fe36dec8f077
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: e143f583-c4f2-48bd-94bf-a28dadcab15b
+        userCondition: null
+handle: OverviewDeadMomentGames
+hasTitleField: false
+name: 'Overzicht dodemomentspelletjes'
+section: 332ee3b0-a4d0-4cc4-9d9f-d467ef67b06d # Overzicht dodemomentspelletjes
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

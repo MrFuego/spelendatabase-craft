@@ -1,0 +1,35 @@
+.home{
+    &__link{
+        max-width: 50%;
+        width: 100%;
+        height: 100%;
+        max-height: 33.33%;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        text-decoration: none;
+        &-item{
+            background-color: $light-gray;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 25%;
+        }
+        &-title{
+            color: $dark-gray;
+            font-family: $secondary-font;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    &__article{
+        background-color: $light-gray;
+        height: 100%;
+        max-height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 0.5rem solid $white;
+    }
+}

@@ -1,0 +1,45 @@
+{% extends "_layouts/site" %}
+
+{% block content %}
+
+    hier voeg je één spel toe
+
+    {% macro errorList(errors) %}
+    {% if errors %}
+        {{ ul(errors, {class: 'errors'}) }}
+    {% endif %}
+    {% endmacro %}
+
+    {# If there were any validation errors, an `entry` variable will be 
+    passed to the template, which contains the posted values 
+    and validation errors. If that’s not set, we’ll default 
+    to a new entry. #}
+    {% set entry = entry ?? create('craft\\elements\\Entry') %}
+
+    {# Add `enctype="multipart/form-data"` to `<form>` if you’re 
+    uploading files. #}
+    <form method="post" accept-charset="UTF-8">
+        {{ csrfInput() }}
+        {{ actionInput('entries/save-entry') }}
+        {{ redirectInput('spelen/{slug}') }}
+        {{ hiddenInput('sectionId', '1') }}
+        {{ hiddenInput('enabled', '1') }}
+
+        <label for="title">Title</label>
+        {{ input('text', 'title', entry.title, {
+            id: 'title',
+        }) }}
+        {{ _self.errorList(entry.getErrors('title')) }}
+
+        <label for="body">Body</label>
+        {{ tag('textarea', {
+            id: 'body',
+            name: 'fields[body]',
+            text: 'test bericht',
+        }) }}
+        {{ _self.errorList(entry.getErrors('body')) }}
+
+        <button type="submit">Publish</button>
+    </form>
+
+{% endblock %}

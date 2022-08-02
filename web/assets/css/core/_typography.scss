@@ -1,0 +1,167 @@
+/* // Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+// Font Variables
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Oswald', sans-serif;
+
+*/
+
+// Font Variables
+$primary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Amatic SC', sans-serif;
+
+/* josefin-sans */
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-Thin.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-ExtraLight.ttf') format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-Light.ttf') format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-Medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-SemiBold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans-Bold.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/* Amatic-SC */
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/AmaticSC-Bold.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+// Styles
+html, body, div, p{
+    font-family: $primary-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.1666666;
+}
+
+.txt{
+    &-dark-gray{
+        color: $dark-gray;
+    }
+    &-light-blue{
+        color: $light-blue;
+    }
+    &-dark-blue{
+        color: $dark-blue;
+    }
+    &-orange{
+        color: $orange;
+    }
+    &-yellow{
+        color: $yellow;
+    }
+    &-medium{
+        font-weight: 600;
+    }
+    &-bold{
+        font-weight: 800;
+    }
+}
+
+/*
+h1, h2{
+    font-family: $secondary-font;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 3rem;
+    span{
+        font-weight: 700;
+    }
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1666666;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 1.166666rem;
+}
+
+*/
+
+.btn{
+    font-family: $primary-font;
+    font-weight: 400;
+}
+
+/*
+
+@media only screen and (max-width: 1060px) {
+    html, body {
+        font-size: 20px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    html, body {
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    html, body {
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    html, body {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    html, body {
+        font-size: 12px
+    }
+} */

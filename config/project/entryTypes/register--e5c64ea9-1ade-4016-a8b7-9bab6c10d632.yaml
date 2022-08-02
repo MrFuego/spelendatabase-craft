@@ -1,0 +1,43 @@
+fieldLayouts:
+  572acc3d-c4a5-4b6f-adb9-fade01175a0e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 75ef5e08-d17b-415b-8971-5d49a5e8d527
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 49069975-03ce-411a-a3bd-207fd29f15ea
+        userCondition: null
+handle: register
+hasTitleField: false
+name: Register
+section: 0ae3328f-cf7d-475c-afbe-b3254f0112ea # Register
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

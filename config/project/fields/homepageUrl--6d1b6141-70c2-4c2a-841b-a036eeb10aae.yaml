@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6a1c89a2-84a5-4ec6-825a-eee41066ca29 # Homepage
+handle: homepageUrl
+instructions: null
+name: 'Link naar pagina'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homepageurl}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

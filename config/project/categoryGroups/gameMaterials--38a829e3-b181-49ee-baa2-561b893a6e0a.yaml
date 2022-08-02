@@ -1,0 +1,42 @@
+defaultPlacement: end
+fieldLayouts:
+  cdbd9e4d-3bf4-4540-bc3f-e323a7aaa194:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 98861b71-42a7-4567-8b61-969017ece22a
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 4010b2bb-b370-405f-a0a9-26266ad53036
+handle: gameMaterials
+name: 'Spel materiaal'
+siteSettings:
+  a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
+    hasUrls: true
+    template: null
+    uriFormat: 'spel-materiaal/{slug}'
+structure:
+  maxLevels: null
+  uid: bb1bf124-6e04-4cb9-9089-b54aeca64d97

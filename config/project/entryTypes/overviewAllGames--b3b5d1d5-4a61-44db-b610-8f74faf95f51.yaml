@@ -1,0 +1,43 @@
+fieldLayouts:
+  50700ccb-cb09-4544-a02e-54a079bffbf8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c672c778-4344-4b00-af49-081ebd274654
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: d4b02e52-9497-4271-92dc-c6a2b16ae412
+        userCondition: null
+handle: overviewAllGames
+hasTitleField: true
+name: 'Overzicht spelen'
+section: a9d03940-ad33-4c4f-8773-a1eb25928afb # Overzicht spelen
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

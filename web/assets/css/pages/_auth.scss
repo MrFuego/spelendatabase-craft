@@ -1,0 +1,44 @@
+.auth__block{
+    height: 100%;
+    &-left{
+        max-width: calc(100% - 500px);
+        width: 100%;
+        background-color: rgb(235, 235, 235);
+    }
+    &-right{
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: $base-padding;
+        a{
+            text-decoration: none;
+        }
+        &-choice{
+            width: 100%;
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+            margin: 2rem 0;
+            color: $dark-gray;
+        }
+        &-choice:before, &-choice:after{
+            content: "";
+            display: block;
+            width: 40%;
+            height: 1px;
+            background: $dark-gray;
+            top: 50%;
+            position: absolute;
+        }
+        &-choice:before {
+            left: 0;
+          }
+          &-choice:after {
+            right: 0;
+          }
+    }
+}

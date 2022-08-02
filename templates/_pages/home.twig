@@ -1,0 +1,27 @@
+{% extends "_layouts/site" %}
+  
+{% block content %}
+
+    <div class="container home">
+        <div class="block-50">
+            <div class="home__article">
+            </div>
+            <div class="home__article">
+            </div>
+        </div>
+        <div class="block-50">
+            {% for homepageUrl in entry.homepageUrl.all() %}
+                <a href="{{homepageUrl.linkUrl.one().getUrl()}}" class="home__link">
+                    <div class="home__link-item">
+                        <h2 class="home__link-title">
+                            {{homepageUrl.linkTitle}}
+                        </h2>
+                    </div>
+                </a>
+
+            {% endfor %}    
+        </div>
+    </div>
+
+
+{% endblock %}

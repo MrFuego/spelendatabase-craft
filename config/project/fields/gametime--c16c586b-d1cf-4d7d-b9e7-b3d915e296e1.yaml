@@ -1,0 +1,14 @@
+columnSuffix: enlwmtnw
+contentColumnType: time
+fieldGroup: fbc67a4a-697c-4b64-bf27-60d2e76ca405 # Spel
+handle: gametime
+instructions: null
+name: Speelduur
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 5
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Time

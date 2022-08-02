@@ -1,0 +1,42 @@
+defaultPlacement: end
+fieldLayouts:
+  30ae487a-f53c-4eea-8329-034fdc149491:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: f1742804-8277-49fd-b703-4450cb05d5a2
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 573a7ae7-b39e-47ad-9dfd-6c04216ac45a
+handle: intensityType
+name: Intensiteit
+siteSettings:
+  a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
+    hasUrls: true
+    template: null
+    uriFormat: 'intensiteit/{slug}'
+structure:
+  maxLevels: null
+  uid: 474fb5f9-6b68-4d37-9fe4-36b14adb0a2b

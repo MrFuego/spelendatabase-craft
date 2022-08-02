@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: randomGame
+name: 'Willekeurig spel'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
+    enabledByDefault: true
+    hasUrls: true
+    template: willekeurig-spel/_entry
+    uriFormat: willekeurig-spel
+type: single

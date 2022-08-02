@@ -1,0 +1,20 @@
+columnSuffix: pzztftln
+contentColumnType: integer(10)
+fieldGroup: fbc67a4a-697c-4b64-bf27-60d2e76ca405 # Spel
+handle: oldestAge
+instructions: null
+name: 'Maximum leeftijd'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

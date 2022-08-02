@@ -1,0 +1,107 @@
+field: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
+fieldLayouts:
+  4e90a9fd-4177-45a5-a51f-b029f798424e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e586182b-8c3f-4827-8a5a-bb87df1c18cd # naam
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fc36257-80ba-4bd8-859b-1cbec57086ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 33edeee0-e5bd-47bb-a308-f995fd7baec7 # url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2236b43-62af-40b4-a2a5-7d0ba7e17590
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b2820da5-5679-4588-9df8-695b9dd8685c
+        userCondition: null
+fields:
+  33edeee0-e5bd-47bb-a308-f995fd7baec7: # url
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkUrl
+    instructions: null
+    name: url
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+          -
+            - conditionRules
+            -
+              -
+                __assoc__:
+                  -
+                    - class
+                    - craft\elements\conditions\HasUrlConditionRule
+                  -
+                    - uid
+                    - 40ff311c-9604-4e18-b5cd-63638aa26cd9
+                  -
+                    - value
+                    - true
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e586182b-8c3f-4827-8a5a-bb87df1c18cd: # naam
+    columnSuffix: ofzubgxx
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkTitle
+    instructions: null
+    name: naam
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: link
+name: link
+sortOrder: 1

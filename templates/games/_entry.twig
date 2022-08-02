@@ -1,0 +1,66 @@
+{% extends "_layouts/site" %}
+
+{% block content %}
+
+    <div class="container games">
+        <div class="games__left-column">
+            <p class="games__content-specs txt-yellow"> 
+                <span class="txt-dark-blue"> Leeftijd: </span> {{ entry.youngestAge }} tot {{ entry.oldestAge }} jaar
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Aantal spelers: </span> {{entry.leastAmountOfPlayers}} tot {{entry.mostAmountOfPlayers}} spelers 
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Duur: </span> {{ entry.gametime | time ("H") * 60 + entry.gametime | time ("i") }} minuten 
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Aantal groepen: </span> 
+                {{ entry.groups }} 
+                {% if (entry.groups == 1 ) %}
+                    groep
+                {% else %}
+                    groepen
+                {% endif %}
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Soort: </span> {{entry.gameType.one().title}}
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Terrein: </span> {{entry.terrain.one().title}}
+            </p>
+            <p class="games__content-specs txt-yellow">
+                <span class="txt-dark-blue"> Thema's: </span> {{entry.theme.one().title}}
+            </p>
+        </div>
+        <div class="games__content">
+                <h1 class="games__content-mainTitle">
+                    {{entry.title}}
+                </h1>
+
+                <p class="games__content-text">Toegevoegd door <span class="txt-medium">{{ entry.author.username }}</span> op {{ entry.postDate | date("d/m/Y") }}</p>
+                
+                <h3 class="games__content-subtitle">
+                    Inleiding
+                </h3>
+                <p class="games__content-text">
+                    {{entry.intro}} 
+                </p>
+
+                <h3 class="games__content-subtitle">
+                    Volledige uitleg van het spel
+                </h3>
+                <p class="games__content-text">
+                    {{entry.explenation}} 
+                </p>
+
+                <h3 class="games__content-subtitle">
+                    Bestanden
+                </h3>
+
+                <h3 class="games__content-subtitle">
+                    Materiaal
+                </h3>
+        </div>
+    </div>
+
+{% endblock %}

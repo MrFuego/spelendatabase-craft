@@ -1,0 +1,43 @@
+fieldLayouts:
+  7d43031e-1a71-4c1b-bf3f-8b7f29ace300:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 232b0a25-bdb4-4b2b-94a6-ec6144a60b35
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 1fd2c04f-6d43-45b5-9649-17bd1f3b4b6e
+        userCondition: null
+handle: overviewAllOneAgainstAllGames
+hasTitleField: false
+name: 'Overzicht één tegen allen opdrachten'
+section: 322bf92a-0dd8-4b01-bdc9-3bb080072db8 # Overzicht één tegen allen opdrachten
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

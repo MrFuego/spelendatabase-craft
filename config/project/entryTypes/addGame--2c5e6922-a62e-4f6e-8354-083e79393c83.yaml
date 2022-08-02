@@ -1,0 +1,43 @@
+fieldLayouts:
+  03df2436-b8c3-4b23-9a33-8e5dbec3d5b7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 52d99237-43d7-4618-b6ec-fb0b52f7a873
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 528be431-387c-4494-84bd-bb59164c90c7
+        userCondition: null
+handle: addGame
+hasTitleField: true
+name: 'Spel toevoegen'
+section: 3ecd3071-dffb-4c9a-9434-7f247d325058 # Spel toevoegen
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

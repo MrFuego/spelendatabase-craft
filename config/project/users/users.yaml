@@ -1,0 +1,7 @@
+allowPublicRegistration: true
+deactivateByDefault: false
+defaultGroup: 2c509aa5-68ac-4202-8632-8340a7516dd9 # Gewone gebruiker
+photoSubpath: /profilePicture
+photoVolumeUid: 25a453ed-97ea-4480-921e-0c572facc9d3 # Uploads
+requireEmailVerification: true
+validateOnPublicRegistration: true

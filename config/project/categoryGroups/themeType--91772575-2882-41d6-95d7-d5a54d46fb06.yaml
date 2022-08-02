@@ -1,0 +1,42 @@
+defaultPlacement: end
+fieldLayouts:
+  1d624d46-4ee7-4e5c-8da4-fd92b56eca80:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 92f624d8-0530-41bb-9bb1-97784354a890
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 94af7ed1-81dc-428b-9a74-0a95c1a9bfdd
+handle: themeType
+name: 'Thema type'
+siteSettings:
+  a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
+    hasUrls: true
+    template: null
+    uriFormat: 'thema/{slug}'
+structure:
+  maxLevels: null
+  uid: b1b91ea9-caa6-4d0b-ad99-189e217d1542

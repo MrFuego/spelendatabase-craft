@@ -1,0 +1,42 @@
+defaultPlacement: end
+fieldLayouts:
+  fc563835-6cfa-4fa5-8e32-f2c66ed4a709:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 2b0f696d-a1c6-49d7-82a7-405539ab7283
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 1e1595da-2364-4d71-a3ef-78cbc6c4d81a
+handle: terrainType
+name: 'Terrein type'
+siteSettings:
+  a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
+    hasUrls: true
+    template: null
+    uriFormat: 'terrein-type/{slug}'
+structure:
+  maxLevels: null
+  uid: 806b8c60-ba61-4ce6-a2a0-b0553fa59c89

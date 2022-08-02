@@ -1,0 +1,43 @@
+fieldLayouts:
+  71f4ebca-e2ce-4852-a272-fb572e9f753a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 32d01378-e9ba-4e6e-a9a0-89d797cd1f86
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 78853986-29a3-4801-947c-7f099e544dc5
+        userCondition: null
+handle: randomGame
+hasTitleField: false
+name: 'Willekeurig spel'
+section: cbd07e0a-3383-4035-924b-222116f901cb # Willekeurig spel
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

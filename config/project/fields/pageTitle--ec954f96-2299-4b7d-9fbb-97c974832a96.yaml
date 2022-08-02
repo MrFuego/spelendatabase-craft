@@ -1,0 +1,19 @@
+columnSuffix: ngvbrigp
+contentColumnType: string(1024)
+fieldGroup: 8fee1281-9138-49c3-8b8e-5343244c2be3 # Common
+handle: pageTitle
+instructions: null
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 256
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
