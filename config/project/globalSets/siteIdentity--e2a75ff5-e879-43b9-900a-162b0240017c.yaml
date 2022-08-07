@@ -1,0 +1,24 @@
+fieldLayouts:
+  aad4f19e-ebcf-48a6-a402-256016a9ba08:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e19a312d-2048-4cb2-b6d6-559faf353306 # Hero Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69dfb8b2-3419-4155-919f-bed4f7bd578e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Achtergrond
+        uid: 3c3e0531-44b4-476f-b053-95440a4c4315
+        userCondition: null
+handle: siteIdentity
+name: SiteIdentity
+sortOrder: 1

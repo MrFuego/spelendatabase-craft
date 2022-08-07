@@ -139,6 +139,27 @@ html, body, div, p {
   font-weight: 800;
 }
 
+a.txt-dark-gray:hover {
+  color: #FBBD08;
+  text-decoration: underline;
+}
+a.txt-light-blue:hover {
+  color: #ED5C01;
+  text-decoration: underline;
+}
+a.txt-dark-blue:hover {
+  color: #ED5C01;
+  text-decoration: underline;
+}
+a.txt-orange:hover {
+  color: #169CAB;
+  text-decoration: underline;
+}
+a.txt-yellow:hover {
+  color: #169CAB;
+  text-decoration: underline;
+}
+
 /*
 h1, h2{
     font-family: $secondary-font;
@@ -230,6 +251,34 @@ html, body {
 .btn:hover {
   cursor: pointer;
 }
+.btn-facebook, .btn-twitter, .btn-google {
+  width: 100%;
+  height: 2.778rem;
+  margin-bottom: 1rem;
+  border: none;
+  color: #FFFFFF;
+}
+.btn-facebook {
+  background-color: #1877f2;
+}
+.btn-facebook:hover {
+  background-color: #FFFFFF;
+  color: #1877f2;
+}
+.btn-twitter {
+  background-color: #1d9bf0;
+}
+.btn-twitter:hover {
+  background-color: #FFFFFF;
+  color: #1d9bf0;
+}
+.btn-google {
+  background-color: #db4a39;
+}
+.btn-google:hover {
+  background-color: #FFFFFF;
+  color: #db4a39;
+}
 
 .form {
   display: flex;
@@ -239,11 +288,11 @@ html, body {
 }
 .form-input, .form-textarea, .form-select, .form-file {
   width: 100%;
-  height: 3.333rem;
-  border: solid 1px #707070;
+  height: 2.778rem;
+  border: none;
   padding: 2%;
   color: #707070;
-  margin-bottom: 1.111rem;
+  margin-bottom: 1rem;
   font-size: 1.15rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -265,8 +314,14 @@ html, body {
 }
 .form-button {
   width: 100%;
-  height: 3.333rem;
-  margin-bottom: 1.111rem;
+  height: 2.778rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #169CAB;
+  color: #EBE3CB;
+}
+.form-button:hover {
+  background-color: #ED5C01;
 }
 .form-file {
   padding: 0.8% 2%;
@@ -293,6 +348,7 @@ html, body {
   box-sizing: border-box;
   padding: 1rem;
   align-items: center;
+  z-index: 10000;
 }
 .main-header h1 {
   font-family: "Amatic SC", sans-serif;
@@ -736,6 +792,9 @@ html, body {
   max-width: calc(100% - 500px);
   width: 100%;
   background-color: #ebebeb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .auth__block-right {
   max-width: 500px;
@@ -749,6 +808,9 @@ html, body {
 }
 .auth__block-right a {
   text-decoration: none;
+}
+.auth__block-right a.social {
+  width: 100%;
 }
 .auth__block-right-choice {
   width: 100%;

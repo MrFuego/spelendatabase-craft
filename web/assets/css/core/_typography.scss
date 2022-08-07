@@ -102,6 +102,31 @@ html, body, div, p{
     }
 }
 
+a{
+    &.txt{
+        &-dark-gray:hover{
+            color: $yellow;
+            text-decoration: underline;
+        }
+        &-light-blue:hover{
+            color: $orange;
+            text-decoration: underline;
+        }
+        &-dark-blue:hover{
+            color: $orange;
+            text-decoration: underline;
+        }
+        &-orange:hover{
+            color: $light-blue;
+            text-decoration: underline;
+        }
+        &-yellow:hover{
+            color: $light-blue;
+            text-decoration: underline;
+        }
+    }
+}
+
 /*
 h1, h2{
     font-family: $secondary-font;

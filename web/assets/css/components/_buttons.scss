@@ -4,4 +4,32 @@
     &:hover{
         cursor: pointer;
     }
+    &-facebook, &-twitter, &-google{
+        width: 100%;
+        height: 2.778rem;
+        margin-bottom: 1rem;
+        border: none;
+        color: $white;
+    }
+    &-facebook{
+        background-color: $facebook-color;
+        &:hover{
+            background-color: $white;
+            color: $facebook-color;
+        }
+    }
+    &-twitter{
+        background-color: $twitter-color;
+        &:hover{
+            background-color: $white;
+            color: $twitter-color;
+        }
+    }
+    &-google{
+        background-color: $google-color;
+        &:hover{
+            background-color: $white;
+            color: $google-color;
+        }
+    }
 }

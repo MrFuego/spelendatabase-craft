@@ -4,6 +4,9 @@
         max-width: calc(100% - 500px);
         width: 100%;
         background-color: rgb(235, 235, 235);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     &-right{
         max-width: 500px;
@@ -16,6 +19,9 @@
         padding: $base-padding;
         a{
             text-decoration: none;
+            &.social{
+                width: 100%;
+            }
         }
         &-choice{
             width: 100%;

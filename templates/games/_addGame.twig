@@ -25,6 +25,7 @@
             {{ redirectInput('spelen/{slug}') }}
             {{ hiddenInput('sectionId', '1') }}
             {{ hiddenInput('enabled', '1') }}
+            {{ hiddenInput('fields[isPublic]', '') }}
 
             <label for="title">Title</label>
             {{ input('text', 'title', entry.title, {
@@ -119,7 +120,7 @@
                 id: 'gameType',
                 type: 'text',
                 name: 'fields[gameType]',
-                value: 6,
+                text: '6',
             }) }}
             {{ _self.errorList(entry.getErrors('gameType')) }}
 
@@ -128,7 +129,8 @@
                 id: 'isPublic',
                 type: 'checkbox',
                 name: 'fields[isPublic]',
-                text: false,
+                value: '1',
+                checked: (entry.isPublic ?? false) ? true : false,
             }) }}
             {{ _self.errorList(entry.getErrors('isPublic')) }}
 

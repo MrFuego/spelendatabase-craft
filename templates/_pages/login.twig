@@ -1,9 +1,13 @@
 {% extends "_layouts/site" %}
+
+{# Get a random image for background #}
+{% set backgroundImage = siteIdentity.heroImage.orderBy('RAND()').one() %}
+  
   
 {% block content %}
 
     <div class="container authentication">
-        <div class="auth__block auth__block-left">
+        <div class="auth__block auth__block-left" style="background-image: url('{{ backgroundImage.url }}')">
             
         </div>
         <div class="auth__block auth__block-right">
@@ -24,7 +28,7 @@
                     placeholder: 'Wachtwoord',
                 }) }}
 
-                <button type="submit" class="btn form-button"> 
+                <button type="submit" class="btn form-button btn-succes"> 
                     Login 
                 </button>
 
@@ -37,14 +41,18 @@
             <a class="txt-light-blue" href="{{ url('register') }}">Registreer hier</a>
             <a class="txt-dark-gray" href="{{ url('resetPassword') }}">Wachtwoord vergeten?</a>
             <p class="auth__block-right-choice"> Of </p>
-            <button class="btn form-button btn-facebook">
-                Login met Facebook
-            </button>
-            <button class="btn form-button btn-twitter">
-                Login met Twitter
-            </button>
-            <a href="{{ craft.socializer.loginUrl('google') }}">
-                <button class="btn form-button btn-google">
+            <a class="social" href="{{ craft.socializer.loginUrl('google') }}">
+                <button class="btn btn-facebook">
+                    Login met Facebook
+                </button>
+            </a>
+            <a class="social" href="{{ craft.socializer.loginUrl('google') }}">
+                <button class="btn btn-twitter">
+                    Login met Twitter
+                </button>
+            </a>
+            <a class="social" href="{{ craft.socializer.loginUrl('google') }}">
+                <button class="btn btn-google">
                     Login met Google
                 </button>
             </a>

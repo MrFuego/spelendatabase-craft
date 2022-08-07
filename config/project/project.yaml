@@ -1,4 +1,4 @@
-dateModified: 1659457972
+dateModified: 1659892268
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -36,6 +36,7 @@ fs:
 meta:
   __names__:
     0ae3328f-cf7d-475c-afbe-b3254f0112ea: Register # Register
+    0e18f0fc-7dbd-4a1e-b8f8-07cbf293100b: 'Site Identity' # Site Identity
     1cc25933-d89f-446d-a114-b66154169e66: 'Materiaal lijst' # Materiaal lijst
     1fafad87-02cb-4572-8313-1ce585e2bf05: 'Aantal groepen' # Aantal groepen
     2c5e6922-a62e-4f6e-8354-083e79393c83: 'Spel toevoegen' # Spel toevoegen
@@ -91,7 +92,9 @@ meta:
     d94396ce-5586-4fae-adcc-084f65e8ed20: Intensiteit # Intensiteit
     db756868-c5be-4387-a9ca-36e74e7cfd2c: Login # Login
     df4ee256-846a-416c-9e10-243b726f0e71: 'Minimum aantal spelers' # Minimum aantal spelers
+    e2a75ff5-e879-43b9-900a-162b0240017c: SiteIdentity # SiteIdentity
     e5c64ea9-1ade-4016-a8b7-9bab6c10d632: Register # Register
+    e19a312d-2048-4cb2-b6d6-559faf353306: 'Hero Image' # Hero Image
     e586182b-8c3f-4827-8a5a-bb87df1c18cd: naam # naam
     ea893c32-648c-4ad1-877a-0146c7cd8552: 'Mijn spelen' # Mijn spelen
     ec954f96-2299-4b7d-9fbb-97c974832a96: Title # Title
@@ -323,6 +326,13 @@ plugins:
     enabled: true
     licenseKey: 6HO10Z275HYB0LTU6THCE7XC
     schemaVersion: 2.0.0
+    settings:
+      allowDownvoting: true
+      allowFontAwesome: true
+      allowVoteRemoval: true
+      keepVoteLog: false
+      preload: true
+      requireLogin: true
   wishlist:
     edition: standard
     enabled: true

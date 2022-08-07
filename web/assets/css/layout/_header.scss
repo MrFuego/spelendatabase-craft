@@ -8,6 +8,7 @@
     box-sizing: border-box;
     padding: 1rem;
     align-items: center;
+    z-index: 10000;
     h1{
         font-family: $secondary-font;
         font-size: 3rem;
