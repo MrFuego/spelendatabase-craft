@@ -19,6 +19,6 @@ siteSettings:
   a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
     enabledByDefault: true
     hasUrls: true
-    template: ondersteuning-om-zelf-een-spel-te-maken/_entry
+    template: _pages/redactor.twig
     uriFormat: ondersteuning-om-zelf-een-spel-te-maken
 type: single

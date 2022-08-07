@@ -152,6 +152,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 940a4856-c438-4dc9-ba20-96043efe8c78 # Doel van het spel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59bc7e6a-545a-4378-84eb-298792a0c4d5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 89aeda29-7de1-4a24-b237-7ca544556d1a # Speluitleg
             instructions: null
             label: null
@@ -183,6 +195,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: fea26bc2-3c6e-4173-b5ab-58fe04eb6d21
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5dccd971-e9cf-4888-8f8b-b6518e7621dc # is publiek
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ad00f40-4e36-4d76-8958-da6296ce3397
             userCondition: null
             warning: null
             width: 100

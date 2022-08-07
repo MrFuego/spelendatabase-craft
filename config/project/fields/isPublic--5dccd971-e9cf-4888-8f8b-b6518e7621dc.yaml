@@ -1,0 +1,14 @@
+columnSuffix: gwqmtjzn
+contentColumnType: boolean
+fieldGroup: fbc67a4a-697c-4b64-bf27-60d2e76ca405 # Spel
+handle: isPublic
+instructions: null
+name: 'is publiek'
+searchable: false
+settings:
+  default: true
+  offLabel: 'niet publiek'
+  onLabel: publiek
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

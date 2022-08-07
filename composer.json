@@ -2,8 +2,12 @@
     "require": {
         "craftcms/cms": "4.2.0.2",
         "craftcms/redactor": "3.0.2",
+        "doublesecretagency/craft-upvote": "2.3.0",
+        "enupal/socializer": "2.0.0",
         "perfectwebteam/craft-mailchimp-transactional": "2.0.1",
         "vaersaagod/seomate": "2.0.3",
+        "verbb/comments": "2.0.0",
+        "verbb/wishlist": "2.0.0",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {

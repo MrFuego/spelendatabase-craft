@@ -1,4 +1,20 @@
-dateModified: 1659382855
+dateModified: 1659457972
+elementSources:
+  verbb\comments\elements\Comment:
+    -
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - comment
+        - commentDate
+        - ownerId
+        - voteCount
+        - flagCount
+        - upvote_voteTally
+        - upvote_totalVotes
+        - upvote_totalUpvotes
+        - upvote_totalDownvotes
+      type: native
 email:
   fromEmail: no-reply@route-404.be
   fromName: spelendatabase
@@ -28,8 +44,10 @@ meta:
     3cb2bd46-d530-4171-ac8a-071b0492c1ac: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
     3ecd3071-dffb-4c9a-9434-7f247d325058: 'Spel toevoegen' # Spel toevoegen
     4a023bf0-7e4d-47d0-b47d-331526fb0d33: fze # fze
+    05c3f2cb-70ce-45fd-adde-74f4be96cf0f: redactor # redactor
     5c7ffd2c-f680-4e53-ae10-eab3a0435bf4: 'Maximum aantal spelers' # Maximum aantal spelers
     5c29cdee-b532-4da6-94de-fc4b3ef39467: Terrein # Terrein
+    5dccd971-e9cf-4888-8f8b-b6518e7621dc: 'is publiek' # is publiek
     6a1c89a2-84a5-4ec6-825a-eee41066ca29: Homepage # Homepage
     6d1b6141-70c2-4c2a-841b-a036eeb10aae: 'Link naar pagina' # Link naar pagina
     6dfee47b-10a4-4592-bbb5-37c9f1d6d89f: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
@@ -45,6 +63,7 @@ meta:
     38a829e3-b181-49ee-baa2-561b893a6e0a: 'Spel materiaal' # Spel materiaal
     46d1f524-1888-4252-966d-d33a9d20d89f: Standaard # Standaard
     71f4e72f-939f-48c3-ade8-a9186988278c: 'Public Schema' # Public Schema
+    83a6d2e6-f1e0-4916-abc8-a37707d95954: 'Mijn spelen' # Mijn spelen
     89aeda29-7de1-4a24-b237-7ca544556d1a: Speluitleg # Speluitleg
     95dd9080-1a19-4454-a0b5-7052e0d5e882: 'Overzicht dodemomentspelletjes' # Overzicht dodemomentspelletjes
     146d3948-abce-4b2f-b9f9-cdf5f7e99597: Bestanden # Bestanden
@@ -54,6 +73,8 @@ meta:
     332ee3b0-a4d0-4cc4-9d9f-d467ef67b06d: 'Overzicht dodemomentspelletjes' # Overzicht dodemomentspelletjes
     603f99df-a8db-4297-bbf4-346789d995a3: 'Willekeurig spel' # Willekeurig spel
     691e3054-1e3e-401f-a831-43f2f43e969d: 'Spel type' # Spel type
+    940a4856-c438-4dc9-ba20-96043efe8c78: 'Doel van het spel' # Doel van het spel
+    6812e2a8-90da-4343-a3d0-a7ecdded2a20: Wishlist # Wishlist
     7813ec25-2f74-44af-b2d4-87056478950a: fze # fze
     5402668f-57a2-4d2d-a55b-15760b93340f: 'Minimum aantal spelers' # Minimum aantal spelers
     91772575-2882-41d6-95d7-d5a54d46fb06: 'Thema type' # Thema type
@@ -72,6 +93,7 @@ meta:
     df4ee256-846a-416c-9e10-243b726f0e71: 'Minimum aantal spelers' # Minimum aantal spelers
     e5c64ea9-1ade-4016-a8b7-9bab6c10d632: Register # Register
     e586182b-8c3f-4827-8a5a-bb87df1c18cd: naam # naam
+    ea893c32-648c-4ad1-877a-0146c7cd8552: 'Mijn spelen' # Mijn spelen
     ec954f96-2299-4b7d-9fbb-97c974832a96: Title # Title
     f014de6c-fdcb-4f4b-a023-354dbb6a4e5e: 'Wachtwoord Reset' # Wachtwoord Reset
     f5e119ac-c04b-4593-aeef-f2a70dad5a26: Thema # Thema
@@ -80,6 +102,210 @@ meta:
     f9172996-eb36-48fb-84f8-4f35c3728c65: 'hoeveelheid materiaal' # hoeveelheid materiaal
     fbc67a4a-697c-4b64-bf27-60d2e76ca405: Spel # Spel
 plugins:
+  comments:
+    edition: standard
+    enabled: true
+    licenseKey: XA1KJPDO0IOJS7YDU09I7XAF
+    schemaVersion: 1.1.7
+    settings:
+      allowFlagging: true
+      allowGuest: false
+      allowGuestFlagging: false
+      allowGuestVoting: false
+      allowVoting: true
+      autoCloseDays: null
+      closed: false
+      defaultQueryStatus:
+        - approved
+      downvoteCommentLimit: 5
+      enableGravatar: false
+      enableSpamChecks: true
+      flaggedCommentLimit: 5
+      guestNotice: null
+      guestRequireEmailName: true
+      guestShowEmailName: true
+      hideVotingForThreshold: false
+      indexSidebarGroup: true
+      indexSidebarIndividualElements: false
+      indexSidebarLimit: 25
+      maxReplyDepth: '2'
+      maxUserComments: null
+      moderatorUserGroup: null
+      notificationAdminEnabled: false
+      notificationAuthorEnabled: true
+      notificationFlaggedEnabled: false
+      notificationModeratorApprovedEnabled: false
+      notificationModeratorEnabled: false
+      notificationReplyEnabled: true
+      notificationSubscribeAuto: false
+      notificationSubscribeCommentEnabled: false
+      notificationSubscribeDefault: true
+      notificationSubscribeEnabled: false
+      outputDefaultCss: true
+      outputDefaultJs: true
+      permissions:
+        __assoc__:
+          -
+            - craft\elements\Asset
+            - '*'
+          -
+            - craft\elements\Category
+            - '*'
+          -
+            - craft\elements\Entry
+            - '*'
+          -
+            - craft\elements\User
+            - '*'
+      placeholderAvatar: null
+      recaptchaEnabled: false
+      recaptchaKey: null
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      requireModeration: false
+      securityBanned: null
+      securityFlooding: null
+      securityMatchExact: false
+      securityMaxLength: null
+      securityModeration: null
+      securitySpamlist: null
+      showAvatar: true
+      showCustomFieldInstructions: false
+      showCustomFieldNames: false
+      showTimeAgo: true
+      sortDefaultDirection: asc
+      sortDefaultKey: structure
+      structureUid: 988ad244-63b3-42cb-8d61-9ecb64ef82ff
+      templateEmail: null
+      templateFolderOverride: null
+      useQueueForNotifications: false
+  enupal-socializer:
+    edition: standard
+    enabled: true
+    licenseKey: RGSV7GOMT70LGMR8AX5JRWQH
+    schemaVersion: 2.0.0
+    settings:
+      enableCp: 1
+      enableFieldMapping: '1'
+      enableFieldMappingPerProvider: ''
+      enableUserSignUp: '1'
+      fieldMapping:
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+        -
+          __assoc__:
+            -
+              - targetUserField
+              - ''
+      userGroupId: '1'
   mailchimp-transactional:
     edition: standard
     enabled: true
@@ -92,6 +318,16 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  upvote:
+    edition: standard
+    enabled: true
+    licenseKey: 6HO10Z275HYB0LTU6THCE7XC
+    schemaVersion: 2.0.0
+  wishlist:
+    edition: standard
+    enabled: true
+    licenseKey: PN7LQEN1FURWX0CI5YFY1D9Q
+    schemaVersion: 1.0.4
 system:
   edition: pro
   live: true

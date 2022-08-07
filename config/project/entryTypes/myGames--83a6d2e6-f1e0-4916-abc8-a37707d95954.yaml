@@ -1,0 +1,43 @@
+fieldLayouts:
+  e4256e6b-c3ac-4ba3-8de1-ccd9c54199e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ae20dcf1-ade2-4ed0-885e-040daf027cf6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: b5b5cd39-4987-407c-bb93-a54242381ceb
+        userCondition: null
+handle: myGames
+hasTitleField: false
+name: 'Mijn spelen'
+section: ea893c32-648c-4ad1-877a-0146c7cd8552 # Mijn spelen
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

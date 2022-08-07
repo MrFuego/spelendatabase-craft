@@ -10,6 +10,8 @@ html, body {
     height: 100%;
     /* padding: 8% $base-padding $base-padding; */
     display: flex;
+    box-sizing: border-box;
+    padding-top: 100px;
 }
 
 .block{

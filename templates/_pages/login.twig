@@ -43,9 +43,12 @@
             <button class="btn form-button btn-twitter">
                 Login met Twitter
             </button>
-            <button class="btn form-button btn-google">
-                Login met Google
-            </button>
+            <a href="{{ craft.socializer.loginUrl('google') }}">
+                <button class="btn form-button btn-google">
+                    Login met Google
+                </button>
+            </a>
+            
         </div>
     </div>
 

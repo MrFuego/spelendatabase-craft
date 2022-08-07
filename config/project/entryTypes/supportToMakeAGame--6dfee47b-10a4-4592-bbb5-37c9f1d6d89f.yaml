@@ -30,6 +30,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 05c3f2cb-70ce-45fd-adde-74f4be96cf0f # redactor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6bdd105b-2e9f-4ac8-b610-f0aa71ab0390
+            userCondition: null
+            warning: null
+            width: 100
         name: Inhoud
         uid: 620e76ab-9a6f-468e-968d-58b68fd32c00
         userCondition: null

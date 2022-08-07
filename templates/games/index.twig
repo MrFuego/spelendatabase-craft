@@ -2,7 +2,8 @@
 
 {# get all games from the database #}
 {% set games = craft.entries({
-    section: 'games'
+    section: 'games',
+    isPublic: 'true'
 }).orderBy('postDate DESC') %}
 
 {# 
