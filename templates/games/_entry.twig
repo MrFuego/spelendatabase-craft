@@ -52,7 +52,7 @@
                 {{entry.title}}
             </h1>
 
-            <p class="games__content-text">Toegevoegd door <span class="txt-medium txt-light-blue">{{ entry.author.username }}</span> op {{ entry.postDate | date("d/m/Y") }}</p>
+            <p class="games__content-text">Toegevoegd door <a href="/gebruiker/{{entry.author.id}}" class="txt-medium txt-light-blue">{{ entry.author.username }}</a> op {{ entry.postDate | date("d/m/Y") }}</p>
             
             <h3 class="games__content-subtitle txt-orange">
                 Inleiding
@@ -90,6 +90,18 @@
             </li>
             {% endfor %}
             </ul>
+
+
+            {% do craft.upvote.setIcons({
+                up   : '<i class="fa fa-thumbs-up"></i>',
+                down : '<i class="fa fa-thumbs-down"></i>',
+            }) %}
+            
+            <div>{{ craft.upvote.upvote(entry.id) }}</div>
+            <div>{{ craft.upvote.tally(entry.id) }}</div>
+            <div>{{ craft.upvote.downvote(entry.id) }}</div>
+
+
             <p> 
                 Laatst bijgewerkt op {{ entry.dateUpdated | date ("d/m/yy") }} om {{ entry.dateUpdated | date ("H:i") }} 
             </p>

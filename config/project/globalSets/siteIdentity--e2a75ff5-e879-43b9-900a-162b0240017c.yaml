@@ -16,6 +16,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 228a6b11-5f90-4b0f-bd62-355a81cefe39 # favicon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25fa38ba-4870-4ce1-ac88-8aabeae1f619
+            userCondition: null
+            warning: null
+            width: 100
         name: Achtergrond
         uid: 3c3e0531-44b4-476f-b053-95440a4c4315
         userCondition: null

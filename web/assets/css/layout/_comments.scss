@@ -2,6 +2,7 @@
 
 // Comments for Craft CMS
 // Author: Verbb - https://verbb.io/
+// Edited by Hannes De Baere
 
 // ==========================================================================
 
@@ -22,7 +23,7 @@ font-size: 15px;
 
 a, .cc-a {
     color: #3273dc;
-
+    font-family: $primary-font;
     &:hover,
     &:active {
         color: #363636;
@@ -35,14 +36,14 @@ a, .cc-a {
 // ==========================================================================
 
 .cc-i {
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
+    margin-top: calc(-100px + 0.75rem);
+    padding-top: calc( 100px + 0.75rem);
     border-top: 1px solid rgba(219, 219, 219, 0.5);
 }
 
 .cc-w-i > .cc-i:first-child {
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: -100px;
+    padding-top: 100px;
     border-top: none;
 }
 
@@ -270,6 +271,7 @@ form[data-action] {
     cursor: pointer;
     font-size: inherit;
     line-height: inherit;
+    color: $secondary-color;
 }
 
 
@@ -293,7 +295,7 @@ form[data-action] {
 .cc-f-btn {
     appearance: none;
     font-family: inherit;
-    border: 2px solid #dbdfe4;
+    border: none;
     border-radius: 4px;
     background-color: #fff;
     color: #2a2e2e;
@@ -357,8 +359,13 @@ form[data-action] {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 700;
-    color: darken(#dbdfe4, 40%);
-    background: #f6f8f9;
+    background-color: $light-blue;
+    color: $white;
+    border-radius: 0;
+    &:hover{
+        background-color: $orange;
+        color: $white;
+    }
 
     &:hover,
     &:active {

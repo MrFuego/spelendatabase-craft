@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 1
+template: profiles/_profile.twig
+uriParts:
+  - gebruiker/
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'gebruiker/<any:[^\/]+>'
