@@ -361,7 +361,7 @@ html, body {
   box-sizing: border-box;
   padding: 1rem;
   align-items: center;
-  z-index: 10000;
+  z-index: 100;
 }
 .main-header h1 {
   font-family: "Amatic SC", sans-serif;
@@ -377,6 +377,138 @@ html, body {
   font-size: 2rem;
 }
 
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+  background-color: #FBBD08;
+}
+
+.mobile-nav-button {
+  background-color: #FBBD08;
+  color: #052D3E;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+}
+.mobile-nav-button:hover {
+  cursor: pointer;
+  color: #169CAB;
+}
+
+.main-header-scrolled {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width: 1500px) {
+  .main-header {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .main-header {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: #FBBD08;
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+  }
+}
+.main-navigation {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  max-width: 40%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.main-navigation-item {
+  text-decoration: none;
+  color: #052D3E;
+}
+.main-navigation-item--active {
+  color: #ED5C01;
+}
+.main-navigation-item:hover {
+  color: #ED5C01;
+}
+
+.left-nav {
+  justify-content: flex-start;
+}
+.left-nav-item {
+  margin-right: 10%;
+}
+.left-nav-item :last-child {
+  margin-right: 0;
+}
+
+.right-nav {
+  justify-content: flex-end;
+}
+.right-nav-item {
+  margin-left: 10%;
+  font-size: 2rem;
+}
+.right-nav-item :last-child {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .left-nav-item {
+    margin-right: 5%;
+  }
+
+  .right-nav-item {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-navigation {
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .main-navigation-item {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .left-nav {
+    order: 2;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .right-nav {
+    order: 3;
+    margin: 0;
+  }
+}
 @keyframes cc-loading {
   0% {
     transform: rotate(0);

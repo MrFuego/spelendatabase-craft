@@ -1,0 +1,25 @@
+{% set activeLink = (craft.app.request.segments|first) %}
+<nav class="main-navigation right-nav txt-white">
+    {# {% set menuItems = mainNavigation.rightNavigationItem.all() %}
+    {% for menuItem in menuItems %}
+        {% set link = menuItem.urlLink.one() %}
+        {% set activeLink = (craft.app.request.segments|first == link.uri or (craft.app.request.segments|first == false and link.uri == '__home__')) %}
+
+        {% if currentUser %}
+            {% if (link.id == 15) or (link.id == 13) %}
+                <a class="main-navigation-item right-nav-item {{ activeLink ? 'main-navigation-item--active' }}" href="{{ link.url }}"> {{ menuItem.label }} </a>
+            {% endif %}
+        {% else %}
+            <a class="main-navigation-item right-nav-item {{ activeLink ? 'main-navigation-item--active' }}" href="{{ link.url }}"> {{ menuItem.label }} </a>
+        {% endif %}
+        
+        
+    {% endfor %} #}
+    {% if craft.app.user.isGuest == false %}
+        <a class="main-navigation-item right-nav-item" href="/mijnProfiel">Mijn Profiel</a>
+        <a class="main-navigation-item right-nav-item" href="{{ logoutUrl }}">Logout</a>
+    {% else %}
+        <a class="main-navigation-item right-nav-item {{ activeLink == "register" ? 'main-navigation-item--active' }}" href="/register">Registreer</a>
+        <a class="main-navigation-item right-nav-item {{ activeLink == "login" ? 'main-navigation-item--active' }}" href="/login">Login</a>
+    {% endif %}
+</nav>

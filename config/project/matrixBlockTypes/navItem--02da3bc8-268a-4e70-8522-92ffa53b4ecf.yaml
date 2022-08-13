@@ -1,0 +1,93 @@
+field: 1d8f21b2-d097-4a76-a1c3-b597e1862651 # Navigatie item
+fieldLayouts:
+  132989c7-f40a-47fc-8964-a78e8717010c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 06865b08-0e90-49f8-a9fc-67040777d7e1 # Naam
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fca3c7a9-63ff-4309-aa1f-ff8588e60302
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 21efaced-8678-4323-a87b-a1054772fab0 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c6d58f5-177d-4827-89ca-6a8e2c83c659
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7ed080c6-14f0-4ce3-b3de-d55c8c9ea3e7
+        userCondition: null
+fields:
+  21efaced-8678-4323-a87b-a1054772fab0: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: navLink
+    instructions: null
+    name: Link
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  06865b08-0e90-49f8-a9fc-67040777d7e1: # Naam
+    columnSuffix: qzihvqgb
+    contentColumnType: string(200)
+    fieldGroup: null
+    handle: navTitle
+    instructions: null
+    name: Naam
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 50
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: navItem
+name: 'Nav Item'
+sortOrder: 1

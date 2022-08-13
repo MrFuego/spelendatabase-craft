@@ -1,4 +1,4 @@
-dateModified: 1660317531
+dateModified: 1660414225
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -38,10 +38,12 @@ meta:
     0ae3328f-cf7d-475c-afbe-b3254f0112ea: Register # Register
     0e18f0fc-7dbd-4a1e-b8f8-07cbf293100b: 'Site Identity' # Site Identity
     1cc25933-d89f-446d-a114-b66154169e66: 'Materiaal lijst' # Materiaal lijst
+    1d8f21b2-d097-4a76-a1c3-b597e1862651: 'Navigatie item' # Navigatie item
     1fafad87-02cb-4572-8313-1ce585e2bf05: 'Aantal groepen' # Aantal groepen
     2c5e6922-a62e-4f6e-8354-083e79393c83: 'Spel toevoegen' # Spel toevoegen
     2c92f68d-b6fc-409a-911d-cf4ab4142049: testMatrixBlock # testMatrixBlock
     2c509aa5-68ac-4202-8632-8340a7516dd9: 'Gewone gebruiker' # Gewone gebruiker
+    02da3bc8-268a-4e70-8522-92ffa53b4ecf: 'Nav Item' # Nav Item
     2f9215d4-56e5-440b-a99f-d505f732a5fb: link # link
     3cb2bd46-d530-4171-ac8a-071b0492c1ac: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
     3ecd3071-dffb-4c9a-9434-7f247d325058: 'Spel toevoegen' # Spel toevoegen
@@ -60,6 +62,7 @@ meta:
     8fee1281-9138-49c3-8b8e-5343244c2be3: Common # Common
     9f4915ff-f144-41f9-b90e-4d517b0950bd: Homepage # Homepage
     11b6b233-12c3-4b4f-8b21-7db92eb95807: 'Mijn Profiel' # Mijn Profiel
+    21efaced-8678-4323-a87b-a1054772fab0: Link # Link
     25a453ed-97ea-4480-921e-0c572facc9d3: Uploads # Uploads
     28ce2114-46d8-4431-a66b-5864db7ab615: 'Spel type' # Spel type
     33edeee0-e5bd-47bb-a308-f995fd7baec7: url # url
@@ -75,12 +78,15 @@ meta:
     259ec406-30de-46aa-9797-029f8d0f20d2: 'Maximum aantal spelers' # Maximum aantal spelers
     322bf92a-0dd8-4b01-bdc9-3bb080072db8: 'Overzicht één tegen allen opdrachten' # Overzicht één tegen allen opdrachten
     332ee3b0-a4d0-4cc4-9d9f-d467ef67b06d: 'Overzicht dodemomentspelletjes' # Overzicht dodemomentspelletjes
+    585cf87e-4f27-48b3-a715-17420e6f5be5: Navigatie # Navigatie
     603f99df-a8db-4297-bbf4-346789d995a3: 'Willekeurig spel' # Willekeurig spel
     691e3054-1e3e-401f-a831-43f2f43e969d: 'Spel type' # Spel type
     940a4856-c438-4dc9-ba20-96043efe8c78: 'Doel van het spel' # Doel van het spel
     6812e2a8-90da-4343-a3d0-a7ecdded2a20: Wishlist # Wishlist
+    06865b08-0e90-49f8-a9fc-67040777d7e1: Naam # Naam
     7813ec25-2f74-44af-b2d4-87056478950a: fze # fze
     8086b01c-8350-4557-8e6e-60255bcc0337: 'matrix Name' # matrix Name
+    4837907b-689e-4038-9f17-b6d6c15e8479: Navigatie # Homepage navigatie
     5402668f-57a2-4d2d-a55b-15760b93340f: 'Minimum aantal spelers' # Minimum aantal spelers
     91772575-2882-41d6-95d7-d5a54d46fb06: 'Thema type' # Thema type
     a9d03940-ad33-4c4f-8773-a1eb25928afb: 'Overzicht spelen' # Overzicht spelen

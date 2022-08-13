@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 585cf87e-4f27-48b3-a715-17420e6f5be5 # Navigatie
+handle: navigationItem
+instructions: null
+name: 'Navigatie item'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_navigationitem}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

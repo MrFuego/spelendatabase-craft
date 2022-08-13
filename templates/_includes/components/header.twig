@@ -1,9 +1,28 @@
-<header class="main-header">
-    <h1 class="txt-orange">Mijn mega coole logo</h1>
-    <nav class="main-nav">
-        <p class="txt-dark-blue">MenuItem</p>
-        <p class="txt-dark-blue">MenuItem</p>
-        <p class="txt-dark-blue">MenuItem</p>
-        <p class="txt-dark-blue">MenuItem</p>
-    </nav>
+{% set headerClass = "main-header-scrolled" %}
+{% set url = craft.app.request.url %}
+
+{% if (url == "/") or (url == "/logMeIn") or (url == "/register")%}
+   {% set headerClass = "" %}
+{% endif %}
+
+<header id="main-header" class="main-header {{headerClass}}">
+    {% include "_includes/components/navigation/left_nav" %}
+
+    <div class="main-header__center">
+        <a class="main-navigation-item" href="{{ craft.app.sites.primarySite.baseUrl }}#home"> 
+            {# {{ svg(siteIdentity.logo.inline)|attr({ 
+                class:'main-header__center-img'
+            }) }} #}
+        </a>
+    </div>
+
+    {% include "_includes/components/navigation/right_nav" %}
 </header>
+<nav class="mobile-nav">
+    <a class="main-navigation-item" href="{{ craft.app.sites.primarySite.baseUrl }}#home"> 
+        {# {{ svg(siteIdentity.logo.inline)|attr({ 
+            class:'main-header__center-img mobile-header__center-img'
+        }) }} #}
+    </a>
+    <button id="mobile-nav-button" class="mobile-nav-button"><i class="fas fa-bars"></i></button>
+</nav>

@@ -1,0 +1,24 @@
+fieldLayouts:
+  7d23bca9-33fd-4992-95a4-0befdde3723a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1d8f21b2-d097-4a76-a1c3-b597e1862651 # Navigatie item
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99c9b3ff-9c7b-4aa2-9289-f08902eed9a8
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Navigatie Links'
+        uid: 7d2132e8-30cc-416f-914e-99211dbd778a
+        userCondition: null
+handle: navigation
+name: Navigatie
+sortOrder: 2
