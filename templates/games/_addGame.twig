@@ -28,7 +28,7 @@
             {{ hiddenInput('fields[isPublic]', '') }}
 
             <label for="title">Naam van het spel</label>
-            {{ input('text', 'title', "", {
+            {{ input('text', 'title', 'test van matrix', {
                 class: 'form-input',
                 required: true,
                 name: 'fields[title]',
@@ -43,6 +43,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[youngestAge]',
+                value: 2,
                 text: entry.youngestAge,
             }) }}
             {{ _self.errorList(entry.getErrors('youngestAge')) }}
@@ -54,6 +55,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[oldestAge]',
+                value: 2,
                 text: entry.oldestAge,
             }) }}
             {{ _self.errorList(entry.getErrors('oldestAge')) }}
@@ -65,6 +67,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[leastAmountOfPlayers]',
+                value: 2,
                 text: entry.leastAmountOfPlayers,
             }) }}
             {{ _self.errorList(entry.getErrors('leastAmountOfPlayers')) }}
@@ -76,6 +79,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[mostAmountOfPlayers]',
+                value: 2,
                 text: entry.mostAmountOfPlayers,
             }) }}
             {{ _self.errorList(entry.getErrors('mostAmountOfPlayers')) }}
@@ -87,6 +91,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[groups]',
+                value: 2,
                 text: entry.groups,
             }) }}
             {{ _self.errorList(entry.getErrors('groups')) }}
@@ -98,6 +103,7 @@
                 class: 'form-input',
                 required: true,
                 name: 'fields[gametime]',
+                value: '10:00',
                 text: entry.gametime,
             }) }}
             {{ _self.errorList(entry.getErrors('gametime')) }}
@@ -110,6 +116,7 @@
                 class: 'form-textarea',
                 required: true,
                 name: 'fields[intro]',
+                value: 'bhkrere ebjkerjbkrejb erkjb er',
                 text: entry.intro,
             }) }}
             {{ _self.errorList(entry.getErrors('intro')) }}
@@ -121,6 +128,7 @@
                 class: 'form-textarea',
                 required: true,
                 name: 'fields[purpose]',
+                value: 'bhkrere ebjkerjbkrejb erkjb er',
                 text: entry.purpose,
             }) }}
             {{ _self.errorList(entry.getErrors('purpose')) }}
@@ -132,20 +140,103 @@
                 class: 'form-textarea',
                 required: true,
                 name: 'fields[explenation]',
+                value: 'bhkrere ebjkerjbkrejb erkjb er',
                 text: entry.explenation,
             }) }}
             {{ _self.errorList(entry.getErrors('explenation')) }}
 
-            <label for="gameType">Spel type</label>
-            {{ tag('input', {
-                id: 'gameType',
-                type: 'text',
-                class: 'form-input',
-                required: true,
-                name: 'fields[gameType]',
-                text: '6',
-            }) }}
-            {{ _self.errorList(entry.getErrors('gameType')) }}
+            {# Include a hidden input first so Craft knows to update the existing value
+            if no checkboxes are checked. #}
+            {{ hiddenInput('fields[gameType]', '') }}
+
+            {# Get all of the possible category options #}
+            {% set gameTypeCategory = craft.categories()
+                .group('gameType')
+                .all() 
+            %}
+
+            <ul>
+                {% nav possibleCategory in gameTypeCategory %}
+                    <li>
+                    <label>
+                        {{ input(
+                        'checkbox',
+                        'fields[gameType][]',
+                        possibleCategory.id,
+                        { checked: true}
+                        ) }}
+                        {{ possibleCategory.title }}
+                    </label>
+                    {% ifchildren %}
+                        <ul>
+                        {% children %}
+                        </ul>
+                    {% endifchildren %}
+                    </li>
+                {% endnav %}
+            </ul>
+
+            {# Include a hidden input first so Craft knows to update the existing value
+            if no checkboxes are checked. #}
+            {{ hiddenInput('fields[terrain]', '') }}
+
+            {# Get all of the possible category options #}
+            {% set terrainCategory = craft.categories()
+                .group('terrainType')
+                .all() 
+            %}
+
+            <ul>
+                {% nav possibleCategory in terrainCategory %}
+                    <li>
+                    <label>
+                        {{ input(
+                        'checkbox',
+                        'fields[terrain][]',
+                        possibleCategory.id,
+                        { checked: true}
+                        ) }}
+                        {{ possibleCategory.title }}
+                    </label>
+                    {% ifchildren %}
+                        <ul>
+                        {% children %}
+                        </ul>
+                    {% endifchildren %}
+                    </li>
+                {% endnav %}
+            </ul>
+
+            {# Include a hidden input first so Craft knows to update the existing value
+            if no checkboxes are checked. #}
+            {{ hiddenInput('fields[theme]', '') }}
+
+            {# Get all of the possible category options #}
+            {% set themeCategory = craft.categories()
+                .group('themeType')
+                .all() 
+            %}
+
+            <ul>
+                {% nav possibleCategory in themeCategory %}
+                    <li>
+                    <label>
+                        {{ input(
+                        'checkbox',
+                        'fields[theme][]',
+                        possibleCategory.id,
+                        { checked: true}
+                        ) }}
+                        {{ possibleCategory.title }}
+                    </label>
+                    {% ifchildren %}
+                        <ul>
+                        {% children %}
+                        </ul>
+                    {% endifchildren %}
+                    </li>
+                {% endnav %}
+            </ul>
 
             <label for="isPublic">Publiek</label>
             {{ tag('input', {
@@ -157,6 +248,38 @@
                 checked: (entry.isPublic ?? false) ? true : false,
             }) }}
             {{ _self.errorList(entry.getErrors('isPublic')) }}
+
+
+
+
+
+{# trying to save a matrix field over here #}
+
+                {# what matrix field is in the for loop - don't remove this (keep it out of the forloop)#}
+                <input type="hidden" name="fields[testmatrix][new:1]" />
+
+                <input type="text" name="fields[testmatrix][new:1][fields][matrixName]" value="test">
+
+                <input type="text" name="fields[testmatrix][new:1][fields][matrixAmount]" value="test2">
+
+
+            {# <input type="hidden" name="fields[testmatrix][new:1][type]" value="text" />
+
+            {{ hiddenInput('fields[testmatrix]', 'new:1') }} #}
+
+            {# Prefix the block's input names with `fields[myFieldHandle][blocks][new:1]` #}
+            {# {% namespace "fields[testmatrix][testmatrixblock][new:1]" %}
+                {{ hiddenInput('type', 'text') }}
+                <textarea name="fields[<matrixName>]"></textarea>
+            {% endnamespace %} #}
+
+
+            {# Prefix the block's input names with `fields[myFieldHandle][blocks][new:1]` #}
+                {# {{ hiddenInput('testmatrixblock', 'text') }}
+                <input type='text' name="fields[matrixName][new:1]"></input>
+                <input type='hidden' name="fields[matrixName][new:1].[enabled]" value="1"></input> #}
+
+
 
             <button type="submit">Publish</button>
         </form>

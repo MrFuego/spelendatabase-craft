@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: fbc67a4a-697c-4b64-bf27-60d2e76ca405 # Spel
+handle: testmatrix
+instructions: null
+name: testMatrix
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_testmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
