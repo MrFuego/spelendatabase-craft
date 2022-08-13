@@ -1,0 +1,10 @@
+siteUid: null
+sortOrder: 2
+template: games/_editGame.twig
+uriParts:
+  - spelen/
+  -
+    - '*'
+    - '[^\/]+'
+  - /edit
+uriPattern: 'spelen/<any:[^\/]+>/edit'

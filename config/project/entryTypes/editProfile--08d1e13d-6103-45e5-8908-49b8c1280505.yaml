@@ -1,0 +1,43 @@
+fieldLayouts:
+  d7d49bcc-4c10-4d2d-83d5-d5e444b6b379:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4a4fd71b-589e-4852-b2c0-046a820d99c9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: fae83e15-8d82-401e-b508-15a8be0c08e9
+        userCondition: null
+handle: editProfile
+hasTitleField: false
+name: 'Profiel bewerken'
+section: d92743f8-2eb6-4650-8b71-f7cf353ed16e # Profiel bewerken
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

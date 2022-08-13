@@ -19,6 +19,6 @@ siteSettings:
   a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
     enabledByDefault: true
     hasUrls: true
-    template: overzicht-dodemomentspelletjes/_entry
-    uriFormat: overzicht-dodemomentspelletjes
+    template: simpleGames/index.twig
+    uriFormat: dodemomentspelletjes
 type: single

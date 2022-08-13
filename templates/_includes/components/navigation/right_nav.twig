@@ -15,8 +15,15 @@
         
         
     {% endfor %} #}
+
+    <a class="main-navigation-item right-nav-item {{ activeLink == "spelen" ? 'main-navigation-item--active' }}" href="/spelen">Spelen</a>
+
+    <a class="main-navigation-item right-nav-item {{ activeLink == "over" ? 'main-navigation-item--active' }}" href="/over">Over</a>
+
+
+
     {% if craft.app.user.isGuest == false %}
-        <a class="main-navigation-item right-nav-item" href="/mijnProfiel">Mijn Profiel</a>
+        <a class="main-navigation-item right-nav-item {{ activeLink == "mijnProfiel" ? 'main-navigation-item--active' }}" href="/mijnProfiel">Mijn Profiel</a>
         <a class="main-navigation-item right-nav-item" href="{{ logoutUrl }}">Logout</a>
     {% else %}
         <a class="main-navigation-item right-nav-item {{ activeLink == "register" ? 'main-navigation-item--active' }}" href="/register">Registreer</a>

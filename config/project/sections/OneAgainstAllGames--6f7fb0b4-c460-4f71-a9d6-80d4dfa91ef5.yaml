@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: overviewAllOneAgainstAllGames
-name: 'Overzicht één tegen allen opdrachten'
+handle: OneAgainstAllGames
+name: 'Eén tegen allen opdrachten'
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,6 @@ siteSettings:
   a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
     enabledByDefault: true
     hasUrls: true
-    template: opdrachten/index.twig
-    uriFormat: opdrachten
-type: single
+    template: opdrachten/_entry.twig
+    uriFormat: 'opdrachten/{slug}'
+type: channel

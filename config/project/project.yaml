@@ -1,4 +1,4 @@
-dateModified: 1660414225
+dateModified: 1660422313
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -39,6 +39,7 @@ meta:
     0e18f0fc-7dbd-4a1e-b8f8-07cbf293100b: 'Site Identity' # Site Identity
     1cc25933-d89f-446d-a114-b66154169e66: 'Materiaal lijst' # Materiaal lijst
     1d8f21b2-d097-4a76-a1c3-b597e1862651: 'Navigatie item' # Navigatie item
+    1de13740-5647-4176-91d5-bc306aca20ad: About # About
     1fafad87-02cb-4572-8313-1ce585e2bf05: 'Aantal groepen' # Aantal groepen
     2c5e6922-a62e-4f6e-8354-083e79393c83: 'Spel toevoegen' # Spel toevoegen
     2c92f68d-b6fc-409a-911d-cf4ab4142049: testMatrixBlock # testMatrixBlock
@@ -56,9 +57,11 @@ meta:
     6d1b6141-70c2-4c2a-841b-a036eeb10aae: 'Link naar pagina' # Link naar pagina
     6dfee47b-10a4-4592-bbb5-37c9f1d6d89f: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
     6ead53d7-0002-4a4a-af83-1c0b3dce0c19: Login # Login
+    6f7fb0b4-c460-4f71-a9d6-80d4dfa91ef5: 'Eén tegen allen opdrachten' # Eén tegen allen opdrachten
     6f7119f2-4379-47e0-ba06-f43685d65fff: 'Materiaal item' # Materiaal item
     8a13966e-c6f9-4bc1-b242-db834badd512: 'Maximum leeftijd' # Maximum leeftijd
     8cb30964-de8f-4299-9a2b-7e8cfbe03360: Homepage # Homepage
+    08d1e13d-6103-45e5-8908-49b8c1280505: 'Profiel bewerken' # Profiel bewerken
     8fee1281-9138-49c3-8b8e-5343244c2be3: Common # Common
     9f4915ff-f144-41f9-b90e-4d517b0950bd: Homepage # Homepage
     11b6b233-12c3-4b4f-8b21-7db92eb95807: 'Mijn Profiel' # Mijn Profiel
@@ -86,7 +89,8 @@ meta:
     06865b08-0e90-49f8-a9fc-67040777d7e1: Naam # Naam
     7813ec25-2f74-44af-b2d4-87056478950a: fze # fze
     8086b01c-8350-4557-8e6e-60255bcc0337: 'matrix Name' # matrix Name
-    4837907b-689e-4038-9f17-b6d6c15e8479: Navigatie # Homepage navigatie
+    949190a5-0720-4d54-af48-03207ae923c2: Standaard # Standaard
+    4837907b-689e-4038-9f17-b6d6c15e8479: Navigatie # Navigatie
     5402668f-57a2-4d2d-a55b-15760b93340f: 'Minimum aantal spelers' # Minimum aantal spelers
     91772575-2882-41d6-95d7-d5a54d46fb06: 'Thema type' # Thema type
     a9d03940-ad33-4c4f-8773-a1eb25928afb: 'Overzicht spelen' # Overzicht spelen
@@ -100,11 +104,13 @@ meta:
     cbd07e0a-3383-4035-924b-222116f901cb: 'Willekeurig spel' # Willekeurig spel
     d084937e-0169-46e2-9fc8-996e457cdb13: 'Matrix Amount' # Matrix Amount
     d18c16ef-3965-4d12-9400-4db1d4c697e4: 'benaming materiaal' # benaming materiaal
+    d92743f8-2eb6-4650-8b71-f7cf353ed16e: 'Profiel bewerken' # Profiel bewerken
     d94396ce-5586-4fae-adcc-084f65e8ed20: Intensiteit # Intensiteit
     db756868-c5be-4387-a9ca-36e74e7cfd2c: Login # Login
     df4ee256-846a-416c-9e10-243b726f0e71: 'Minimum aantal spelers' # Minimum aantal spelers
     e2a75ff5-e879-43b9-900a-162b0240017c: SiteIdentity # SiteIdentity
     e5c64ea9-1ade-4016-a8b7-9bab6c10d632: Register # Register
+    e7bf288e-7066-4622-9d28-96ee8a3a6a59: About # About
     e19a312d-2048-4cb2-b6d6-559faf353306: 'Hero Image' # Hero Image
     e586182b-8c3f-4827-8a5a-bb87df1c18cd: naam # naam
     ea893c32-648c-4ad1-877a-0146c7cd8552: 'Mijn spelen' # Mijn spelen
