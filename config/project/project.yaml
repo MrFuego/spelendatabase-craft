@@ -1,4 +1,4 @@
-dateModified: 1660422313
+dateModified: 1660577147
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -67,10 +67,12 @@ meta:
     11b6b233-12c3-4b4f-8b21-7db92eb95807: 'Mijn Profiel' # Mijn Profiel
     21efaced-8678-4323-a87b-a1054772fab0: Link # Link
     25a453ed-97ea-4480-921e-0c572facc9d3: Uploads # Uploads
+    27b33b16-da29-4cd2-a97b-39557f2c0e23: Standaard # Standaard
     28ce2114-46d8-4431-a66b-5864db7ab615: 'Spel type' # Spel type
     33edeee0-e5bd-47bb-a308-f995fd7baec7: url # url
     38a829e3-b181-49ee-baa2-561b893a6e0a: 'Spel materiaal' # Spel materiaal
     46d1f524-1888-4252-966d-d33a9d20d89f: Standaard # Standaard
+    55b9367d-1681-42a2-9c38-e9019269f699: 'Dodemomentspelletje toevoegen' # Dodemomentspelletje toevoegen
     71f4e72f-939f-48c3-ade8-a9186988278c: 'Public Schema' # Public Schema
     83a6d2e6-f1e0-4916-abc8-a37707d95954: 'Mijn spelen' # Mijn spelen
     89aeda29-7de1-4a24-b237-7ca544556d1a: Speluitleg # Speluitleg
@@ -96,7 +98,9 @@ meta:
     a9d03940-ad33-4c4f-8773-a1eb25928afb: 'Overzicht spelen' # Overzicht spelen
     a196e0e6-3f10-4c9b-857f-27ac17884afa: spelendatabase # spelendatabase
     b3b5d1d5-4a61-44db-b610-8f74faf95f51: 'Overzicht spelen' # Overzicht spelen
+    b654d6b4-8939-4ca1-a408-5c7f05f7d94e: 'Dodemomentspelletje toevoegen' # Dodemomentspelletje toevoegen
     b92690fb-549e-494d-8c1b-1481340be882: 'Wachtwoord Reset' # Wachtwoord Reset
+    bb4dab03-1b87-4c75-b141-84eee5b64c8b: 'Dode moment spelletjes' # Dode moment spelletjes
     c9c4c4e4-1594-49b6-86fc-377c72c8303a: spelendatabase # spelendatabase
     c16c586b-d1cf-4d7d-b9e7-b3d915e296e1: Speelduur # Speelduur
     cb0443b6-2e43-4d70-b39c-1e9ab6876455: 'Overzicht één tegen allen opdrachten' # Overzicht één tegen allen opdrachten

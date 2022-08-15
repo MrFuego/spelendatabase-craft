@@ -1,3 +1,57 @@
 .redactor{
-    
+    font-size: 1.222rem;
+    line-height: 1.667rem;
+    h1, h2, h3, h4, h5, h6{
+        font-family: $secondary-font;
+        font-weight: bold;
+        color: $orange;
+    }
+
+    h1{
+        font-size: 3.333rem;
+        line-height: 3.333rem;
+    }
+    h2{
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+    }
+    p{
+        font-size: 1.222rem;
+        line-height: 1.667rem;
+        margin-top: 1rem;
+    }
+    strong{
+        font-weight: bold;
+    }
+    em{
+        font-style: italic;
+    }
+    li{
+        line-height: 2.5rem;
+        list-style: none;
+        margin-left: 1em;
+        &::before{
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: $orange; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+    }
+    img{
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    a{
+        color: $light-blue;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+
+.games__content.redactor{
+    padding-right: 10rem;
 }

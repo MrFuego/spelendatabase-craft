@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 3
+template: games/_soort.twig
+uriParts:
+  - spelen/soort/
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'spelen/soort/<any:[^\/]+>'

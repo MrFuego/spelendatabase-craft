@@ -3,7 +3,30 @@
 {% block content %}
 
     <div class="container">
-        <h1> Hier komt er één dode moment spelletje</h1>
+        <div class="games__left-column">
+            <a class="profile" href="/dodemomentspelletjes">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar alle dodemoment spelletjes</button>
+            </a>
+            <a class="profile" href="/dodemomentspelletjes/toevoegen">
+                <button type="submit" class="btn form-button form-button-reverse">Een dodemomentspelletje toevoegen</button>
+            </a>
+        </div>
+        <div class="games__content">
+            <h1 class="games__content-mainTitle txt-orange">
+                {{entry.title}}
+            </h1>
+            <p class="games__content-text">Toegevoegd door <a href="/gebruiker/{{entry.author.id}}" class="txt-medium txt-light-blue">{{ entry.author.username }}</a> op {{ entry.postDate | date("d/m/Y") }}</p>
+
+
+            <div class="games__content-text redactor">
+                {{entry.explenation}} 
+            </div>
+
+            <p class="games__content-bottom-text"> 
+                Laatst bijgewerkt op {{ entry.dateUpdated | date ("d/m/yy") }} om {{ entry.dateUpdated | date ("H:i") }} 
+            </p>
+           
+        </div>
     </div>
     
 {% endblock %}

@@ -7,7 +7,8 @@
             position: fixed;
             height: 100%;
             box-sizing: border-box;
-            padding: 5rem 1rem 1rem;
+            padding: 1rem;
+            overflow: scroll;
         }
     }
     &__content{
@@ -16,6 +17,9 @@
         box-sizing: border-box;
         padding: 1rem;
         margin-left: 300px;
+        &-bottom-text{
+            float: right;
+        }
         &-link{
             text-decoration: none;
             color: $dark-gray;
@@ -60,6 +64,20 @@
                 margin-bottom: 1rem;
                 font-weight: 400;
             }
+        }
+    }
+    &__form{
+        max-width: 80%;
+    }
+}
+li.games__content-specs-spec{
+    font-size:1.222rem;
+    line-height: 1rem;
+    a{
+        text-decoration: none;
+        color: $yellow;
+        &:hover{
+            color: $dark-blue;
         }
     }
 }

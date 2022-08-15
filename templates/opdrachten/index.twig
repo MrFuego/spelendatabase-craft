@@ -1,9 +1,72 @@
 {% extends "_layouts/site" %}
+
+{% set tasks = craft.entries({
+    section: 'OneAgainstAllGames',
+})
+.orderBy('postDate DESC') %}
   
 {% block content %}
 
     <div class="container">
-        <h1> Hier komen alle opdrachten </h1>
+        <div class="games__left-column">
+        </div>
+        <div class="games__content">
+            <h1 class="page-title">Alle één tegen allen opdrachten</h1>
+            <p>Hieronder staat er een volledige lijst met één tegen allen opdrachten</p>
+
+            {% if currentUser %}
+
+                {% macro errorList(errors) %}
+                {% if errors %}
+                    {{ ul(errors, {class: 'errors'}) }}
+                {% endif %}
+                {% endmacro %}
+
+                {# If there were any validation errors, an `entry` variable will be 
+                passed to the template, which contains the posted values 
+                and validation errors. If that’s not set, we’ll default 
+                to a new entry. #}
+                {% set entry = entry ?? create('craft\\elements\\Entry') %}
+
+
+                {# Add `enctype="multipart/form-data"` to `<form>` if you’re 
+                uploading files. #}
+                <form class="form games__form" method="post" accept-charset="UTF-8">
+                    {{ csrfInput() }}
+                    {{ actionInput('entries/save-entry') }}
+                    {{ redirectInput('opdrachten') }}
+                    {{ hiddenInput('sectionId', '16') }}
+                    {{ hiddenInput('enabled', '1') }}
+                    {{ hiddenInput('fields[isPublic]', '') }}
+
+                    {{ input('text', 'title', '', {
+                        class: 'form-input',
+                        required: true,
+                        name: 'fields[title]',
+                        id: 'title',
+                        placeholder: 'mijn geweldige één tegen allen opdracht',
+                    }) }}
+                    {{ _self.errorList(entry.getErrors('title')) }}
+
+                    <button type="submit" class="btn form-button">Opdracht toevoegen</button>
+                </form>
+
+            {% else %}
+                <p class="nice-to-know"> Je kunt zelf opdrachten toevoegen als je ingelogd bent </p>
+            {% endif %}
+
+            <table>
+                <tbody>
+                    {% for task in tasks %}
+                        <tr>
+                            <td>
+                            {{ task.title }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
     
 {% endblock %}

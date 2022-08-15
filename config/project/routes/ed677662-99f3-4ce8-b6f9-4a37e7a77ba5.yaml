@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 4
+template: games/_thema.twig
+uriParts:
+  - spelen/thema/
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'spelen/thema/<any:[^\/]+>'

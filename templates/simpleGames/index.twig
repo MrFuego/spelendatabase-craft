@@ -1,9 +1,34 @@
 {% extends "_layouts/site" %}
+
+{% set simpleGames = craft.entries({
+    section: 'deadMomentGames',
+})
+.orderBy('RAND()') %}
   
 {% block content %}
 
     <div class="container">
-        <h1> Hier komt er een overzicht van alle dode moment spelletjes</h1>
+        <div class="games__left-column">
+        </div>
+        <div class="games__content">
+            <h1 class="page-title">Alle dodemomentspelletjes</h1>
+            <p>Hieronder vind je enkele dode moment spelletjes.</p>
+            <p>Een dodemomentspelletje is een spelletje dat binnen een beperkte tijd kan uitgelegd worden en waarvoor je weinig tot geen materiaal nodig hebt.</p>
+
+            <p class="nice-to-know"> Je kunt <a href="dodemomentspelletjes/toevoegen" class="nice-link">hier</a> zelf een dodemomentspelletje toevoegen </p>
+            {% for simpleGame in simpleGames %}
+                <a href="{{ simpleGame.getUrl() }}" class="games__content-link">
+                    <div class="games__content__item">
+                        <h2 class="games__content-title txt-light-blue">
+                            {{simpleGame.title}}
+                        </h2>
+                        <p class="games__content-text txt-dark-blue">
+                            {{simpleGame.explenation}} 
+                        </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
     </div>
     
 {% endblock %}

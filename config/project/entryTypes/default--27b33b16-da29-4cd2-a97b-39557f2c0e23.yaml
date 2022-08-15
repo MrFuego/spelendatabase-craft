@@ -1,5 +1,5 @@
 fieldLayouts:
-  db91f7f9-3c01-4d5e-98ee-f0550284610f:
+  966b6c2e-bc69-49b8-a304-d609f7b06871:
     tabs:
       -
         elementCondition: null
@@ -26,30 +26,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 70507325-3e36-4878-9816-570cd970eed4
+            uid: 2eecfc93-e7be-4278-ae1c-1c8dd7a1b6b7
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 05c3f2cb-70ce-45fd-adde-74f4be96cf0f # redactor
+            fieldUid: 89aeda29-7de1-4a24-b237-7ca544556d1a # Speluitleg
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: efb4dad6-c5b9-4b83-a244-9c458074122e
+            uid: 50cadb93-f8c7-40da-a7c8-8563aa08f46d
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 742e7ba0-cf72-4ce6-91d4-6f402fe5a0d5
+        uid: 35675252-9851-45fd-9414-8cec791e3b8d
         userCondition: null
-handle: about
-hasTitleField: false
-name: About
-section: e7bf288e-7066-4622-9d28-96ee8a3a6a59 # About
+handle: default
+hasTitleField: true
+name: Standaard
+section: bb4dab03-1b87-4c75-b141-84eee5b64c8b # Dode moment spelletjes
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -36,14 +36,42 @@
                 </span>
             </p>
             <p class="games__content-specs txt-yellow">
-                <span class="txt-dark-blue"> Soort: </span> <span class="games__content-specs-spec"> {{entry.gameType.one().title}} </span>
+                <span class="txt-dark-blue"> Soort: </span> 
             </p>
+            <ul>
+                {% for gameType in entry.gameType %}
+                    <li class="games__content-specs-spec txt-yellow"> 
+                        <a href="/spelen/soort/{{gameType.title}}">
+                            {{gameType.title}} 
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
             <p class="games__content-specs txt-yellow">
-                <span class="txt-dark-blue"> Terrein: </span> <span class="games__content-specs-spec"> {{entry.terrain.one().title}} </span>
+                <span class="txt-dark-blue"> Terrein: </span> 
             </p>
+            <ul>
+                {% for terrain in entry.terrain %}
+                    <li class="games__content-specs-spec txt-yellow"> 
+                        <a href="/spelen/terrein/{{terrain.title}}">
+                            {{terrain.title}} 
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            
             <p class="games__content-specs txt-yellow">
-                <span class="txt-dark-blue"> Thema's: </span> <span class="games__content-specs-spec"> {{entry.theme.one().title}} </span>
+                <span class="txt-dark-blue"> Thema's: </span>
             </p>
+            <ul>
+                {% for theme in entry.theme %}
+                    <li class="games__content-specs-spec txt-yellow"> 
+                        <a href="/spelen/thema/{{theme.title}}">
+                            {{theme.title}} 
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
 
 
@@ -102,7 +130,7 @@
             <div>{{ craft.upvote.downvote(entry.id) }}</div> #}
 
 
-            <p> 
+            <p class="games__content-bottom-text"> 
                 Laatst bijgewerkt op {{ entry.dateUpdated | date ("d/m/yy") }} om {{ entry.dateUpdated | date ("H:i") }} 
             </p>
 

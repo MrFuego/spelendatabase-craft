@@ -4,6 +4,9 @@
 
     <div class="container profile">
         <div class="games__left-column">
+            <a class="profile" href="/mijnProfiel">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar profiel</button>
+            </a>
         </div>
         {# Require that a user is logged in to view this form. #}
         {% requireLogin %}
@@ -124,7 +127,7 @@
                 }) }}
                 {{ _self.errorList(user.getErrors('bio')) }} #}
 
-                <button type="submit" class="btn form-button">Save Profile</button>
+                <button type="submit" class="btn form-button">Aanpassingen opslaan</button>
             </form>
         </div>
     </div>

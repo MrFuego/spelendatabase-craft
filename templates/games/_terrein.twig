@@ -1,19 +1,21 @@
 {% extends "_layouts/site" %}
 
-{# get the current logged in user #}
-{% set user = currentUser %}
+{% set type = craft.app.request.getSegment(3) %}
+
+{% set category = craft.categories.group('terrainType').slug(type) %}
 
 {# get all games from the database #}
 {% set games = craft.entries({
     section: 'games',
-    authorId: user.id,
+    isPublic: 'true',
 })
+.relatedTo(category)
 .orderBy('postDate DESC') %}
 
 {% block content %}
     <div class="container games">
         <div class="games__left-column">
-            <h1 class="page-title">Zoekbalk</h1>
+            <h1>Terrein {{ type }}</h1>
         </div>
         <div class="games__content">
             {% for game in games %}

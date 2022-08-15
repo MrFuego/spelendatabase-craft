@@ -3,8 +3,13 @@
 {% block content %}
 
     <div class="container">
+        <div class="games__left-column profile__left-column">
+
+        </div>
+        <div class="games__content">
 
         {% if currentUser %}
+            <h1 class="page-title"> Zelf een spel toevoegen </h1>
 
             {% macro errorList(errors) %}
             {% if errors %}
@@ -21,7 +26,7 @@
 
             {# Add `enctype="multipart/form-data"` to `<form>` if you’re 
             uploading files. #}
-            <form class="form" method="post" accept-charset="UTF-8">
+            <form class="form games__form" method="post" accept-charset="UTF-8">
                 {{ csrfInput() }}
                 {{ actionInput('entries/save-entry') }}
                 {{ redirectInput('spelen/{slug}') }}
@@ -30,7 +35,7 @@
                 {{ hiddenInput('fields[isPublic]', '') }}
 
                 <label for="title">Naam van het spel</label>
-                {{ input('text', 'title', 'test van matrix', {
+                {{ input('text', 'title', '', {
                     class: 'form-input',
                     required: true,
                     name: 'fields[title]',
@@ -45,7 +50,6 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[youngestAge]',
-                    value: 2,
                     text: entry.youngestAge,
                 }) }}
                 {{ _self.errorList(entry.getErrors('youngestAge')) }}
@@ -57,7 +61,6 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[oldestAge]',
-                    value: 2,
                     text: entry.oldestAge,
                 }) }}
                 {{ _self.errorList(entry.getErrors('oldestAge')) }}
@@ -69,7 +72,6 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[leastAmountOfPlayers]',
-                    value: 2,
                     text: entry.leastAmountOfPlayers,
                 }) }}
                 {{ _self.errorList(entry.getErrors('leastAmountOfPlayers')) }}
@@ -81,7 +83,6 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[mostAmountOfPlayers]',
-                    value: 2,
                     text: entry.mostAmountOfPlayers,
                 }) }}
                 {{ _self.errorList(entry.getErrors('mostAmountOfPlayers')) }}
@@ -93,7 +94,6 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[groups]',
-                    value: 2,
                     text: entry.groups,
                 }) }}
                 {{ _self.errorList(entry.getErrors('groups')) }}
@@ -105,44 +105,37 @@
                     class: 'form-input',
                     required: true,
                     name: 'fields[gametime]',
-                    value: '10:00',
                     text: entry.gametime,
                 }) }}
                 {{ _self.errorList(entry.getErrors('gametime')) }}
 
 
-                <label for="intro">Intro</label>
-                {{ tag('input', {
+                <label for="intro">Korte uitleg over het spel</label>
+                {{ tag('textarea', {
                     id: 'intro',
-                    type: 'textarea',
                     class: 'form-textarea',
                     required: true,
                     name: 'fields[intro]',
-                    value: 'bhkrere ebjkerjbkrejb erkjb er',
                     text: entry.intro,
                 }) }}
                 {{ _self.errorList(entry.getErrors('intro')) }}
 
                 <label for="purpose">Doel van het spel</label>
-                {{ tag('input', {
+                {{ tag('textarea', {
                     id: 'purpose',
-                    type: 'text',
                     class: 'form-textarea',
                     required: true,
                     name: 'fields[purpose]',
-                    value: 'bhkrere ebjkerjbkrejb erkjb er',
                     text: entry.purpose,
                 }) }}
                 {{ _self.errorList(entry.getErrors('purpose')) }}
 
                 <label for="explenation">Speluitleg</label>
-                {{ tag('input', {
+                {{ tag('textarea', {
                     id: 'explenation',
-                    type: 'text',
                     class: 'form-textarea',
                     required: true,
                     name: 'fields[explenation]',
-                    value: 'bhkrere ebjkerjbkrejb erkjb er',
                     text: entry.explenation,
                 }) }}
                 {{ _self.errorList(entry.getErrors('explenation')) }}
@@ -157,7 +150,8 @@
                     .all() 
                 %}
 
-                <ul>
+                <label for="gameType">Speltype</label>
+                <ul class="form-list">
                     {% nav possibleCategory in gameTypeCategory %}
                         <li>
                         <label>
@@ -165,7 +159,7 @@
                             'checkbox',
                             'fields[gameType][]',
                             possibleCategory.id,
-                            { checked: true}
+                            { checked: false}
                             ) }}
                             {{ possibleCategory.title }}
                         </label>
@@ -188,7 +182,8 @@
                     .all() 
                 %}
 
-                <ul>
+                <label for="terrain">Terrein</label>
+                <ul class="form-list">
                     {% nav possibleCategory in terrainCategory %}
                         <li>
                         <label>
@@ -196,7 +191,7 @@
                             'checkbox',
                             'fields[terrain][]',
                             possibleCategory.id,
-                            { checked: true}
+                            { checked: false}
                             ) }}
                             {{ possibleCategory.title }}
                         </label>
@@ -218,8 +213,9 @@
                     .group('themeType')
                     .all() 
                 %}
-
-                <ul>
+                
+                <label for="theme">Thema's</label>
+                <ul class="form-list">
                     {% nav possibleCategory in themeCategory %}
                         <li>
                         <label>
@@ -227,7 +223,7 @@
                             'checkbox',
                             'fields[theme][]',
                             possibleCategory.id,
-                            { checked: true}
+                            { checked: false}
                             ) }}
                             {{ possibleCategory.title }}
                         </label>
@@ -240,13 +236,12 @@
                     {% endnav %}
                 </ul>
 
-                <label for="isPublic">Publiek</label>
+                <label for="isPublic">Mag het spel openbaar zichtbaar zijn?</label>
                 {{ tag('input', {
                     id: 'isPublic',
                     type: 'checkbox',
                     class: 'form-checkbox',
                     name: 'fields[isPublic]',
-                    value: '1',
                     checked: (entry.isPublic ?? false) ? true : false,
                 }) }}
                 {{ _self.errorList(entry.getErrors('isPublic')) }}
@@ -258,11 +253,11 @@
     {# trying to save a matrix field over here #}
 
                     {# what matrix field is in the for loop - don't remove this (keep it out of the forloop)#}
-                    <input type="hidden" name="fields[testmatrix][new:1]" />
+                   {#  <input type="hidden" name="fields[testmatrix][new:1]" />
 
                     <input type="text" name="fields[testmatrix][new:1][fields][matrixName]" value="test">
 
-                    <input type="text" name="fields[testmatrix][new:1][fields][matrixAmount]" value="test2">
+                    <input type="text" name="fields[testmatrix][new:1][fields][matrixAmount]" value="test2"> #}
 
 
                 {# <input type="hidden" name="fields[testmatrix][new:1][type]" value="text" />
@@ -283,13 +278,14 @@
 
 
 
-                <button type="submit">Publish</button>
+                <button type="submit" class="btn form-button">Spel toevoegen</button>
             </form>
 
         {% else %}
             <h1> Oeps, om een spel toe te voegen moet je inloggen </h1>
         {% endif %}
-        
+        </div>
+
     </div>
 
 {% endblock %}

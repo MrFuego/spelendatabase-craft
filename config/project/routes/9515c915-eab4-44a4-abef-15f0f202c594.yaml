@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 5
+template: games/_terrein.twig
+uriParts:
+  - spelen/terrein/
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'spelen/terrein/<any:[^\/]+>'

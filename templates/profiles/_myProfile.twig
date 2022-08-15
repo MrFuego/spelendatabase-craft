@@ -1,15 +1,27 @@
 {% extends "_layouts/site" %}
   
+{% set user = user ?? currentUser %}
+
+{# Require that a user is logged in to view this form. #}
+        {% requireLogin %}
+
 {% block content %}
 
     <div class="container profile">
-        <div class="games__left-column">
+        <div class="games__left-column profile__left-column">
+        {{ user.photo.getImg|attr({
+                id: 'user-photo',
+                class: 'profile__profile-pic',
+                alt: user.friendlyName,
+            }) }}
+
+            <a class="profile" href="/mijnProfiel/edit">
+                <button type="submit" class="btn form-button form-button-reverse">Profiel bewerken</button>
+            </a>
         </div>
-        {# Require that a user is logged in to view this form. #}
-        {% requireLogin %}
 
         <div class="games__content">
-
+            <h1 class="page-title"> Welkom {{ currentUser }}</h1>
             
         </div>
     </div>

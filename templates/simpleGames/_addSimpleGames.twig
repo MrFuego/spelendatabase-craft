@@ -1,9 +1,70 @@
 {% extends "_layouts/site" %}
+
+{# Require that a user is logged in to view this form. #}
+        {% requireLogin %}
   
 {% block content %}
 
     <div class="container">
-        <h1> Hier kun je één dode moment spelletje toevoegen </h1>
+        <div class="games__left-column">
+            <a class="profile" href="/dodemomentspelletjes">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar alle dodemoment spelletjes</button>
+            </a>
+        </div>
+        <div class="games__content">
+            <h1 class="page-title">Een dodemomentspelletje toevoegen</h1>
+
+            {% if currentUser %}
+
+                {% macro errorList(errors) %}
+                {% if errors %}
+                    {{ ul(errors, {class: 'errors'}) }}
+                {% endif %}
+                {% endmacro %}
+
+                {# If there were any validation errors, an `entry` variable will be 
+                passed to the template, which contains the posted values 
+                and validation errors. If that’s not set, we’ll default 
+                to a new entry. #}
+                {% set entry = entry ?? create('craft\\elements\\Entry') %}
+
+
+                {# Add `enctype="multipart/form-data"` to `<form>` if you’re 
+                uploading files. #}
+                <form class="form games__form" method="post" accept-charset="UTF-8">
+                    {{ csrfInput() }}
+                    {{ actionInput('entries/save-entry') }}
+                    {{ redirectInput('dodemomentspelletjes/{slug}') }}
+                    {{ hiddenInput('sectionId', '19') }}
+                    {{ hiddenInput('enabled', '1') }}
+                    {{ hiddenInput('fields[isPublic]', '') }}
+
+                    <label for="title">Naam van het spel</label>
+                    {{ input('text', 'title', '', {
+                        class: 'form-input',
+                        required: true,
+                        name: 'fields[title]',
+                        id: 'title',
+                    }) }}
+                    {{ _self.errorList(entry.getErrors('title')) }}
+
+                    <label for="explenation">Speluitleg</label>
+                    {{ tag('textarea', {
+                        id: 'explenation',
+                        class: 'form-textarea',
+                        required: true,
+                        name: 'fields[explenation]',
+                        text: entry.explenation,
+                    }) }}
+                    {{ _self.errorList(entry.getErrors('explenation')) }}
+
+                    <button type="submit" class="btn form-button">Spel toevoegen</button>
+                </form>
+
+            {% else %}
+                <p class="nice-to-know"> Je kunt zelf een dodemomentspelletje toevoegen als je ingelogd bent </p>
+            {% endif %}
+        </div>
     </div>
     
 {% endblock %}

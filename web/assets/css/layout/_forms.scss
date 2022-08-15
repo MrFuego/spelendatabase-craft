@@ -56,10 +56,19 @@
             background-color: $orange;
             
         }
+        &-reverse{
+            background-color: $orange;
+            &:hover{
+                background-color: $dark-blue;
+            }
+        }
     }
     &-file{
         padding: 0.8% 2%;
         display: flex;
+    }
+    &-list{
+        margin-bottom: 1rem;
     }
     label{
         width: 100%;

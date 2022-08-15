@@ -127,6 +127,26 @@ a{
     }
 }
 
+.page-title{
+    font-size: 3.333rem;
+    font-family: $secondary-font;
+    font-weight: bold;
+    color: $orange;
+}
+
+.nice-to-know{
+    font-style: italic;
+    color: $light-blue;
+}
+
+.nice-link{
+    color: $orange;
+    text-decoration: none;
+    &:hover{
+        color: $dark-blue;
+    }
+}
+
 /*
 h1, h2{
     font-family: $secondary-font;

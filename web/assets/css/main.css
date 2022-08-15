@@ -159,6 +159,26 @@ a.txt-yellow:hover {
   text-decoration: underline;
 }
 
+.page-title {
+  font-size: 3.333rem;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  color: #ED5C01;
+}
+
+.nice-to-know {
+  font-style: italic;
+  color: #169CAB;
+}
+
+.nice-link {
+  color: #ED5C01;
+  text-decoration: none;
+}
+.nice-link:hover {
+  color: #052D3E;
+}
+
 /*
 h1, h2{
     font-family: $secondary-font;
@@ -244,6 +264,11 @@ html, body {
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 40px;
+  }
+}
 .btn {
   font-size: 1.15rem;
 }
@@ -277,6 +302,69 @@ html, body {
 .btn-google:hover {
   background-color: #FFFFFF;
   color: #db4a39;
+}
+
+.redactor {
+  font-size: 1.222rem;
+  line-height: 1.667rem;
+}
+.redactor h1, .redactor h2, .redactor h3, .redactor h4, .redactor h5, .redactor h6 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  color: #ED5C01;
+}
+.redactor h1 {
+  font-size: 3.333rem;
+  line-height: 3.333rem;
+}
+.redactor h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+.redactor p {
+  font-size: 1.222rem;
+  line-height: 1.667rem;
+  margin-top: 1rem;
+}
+.redactor strong {
+  font-weight: bold;
+}
+.redactor em {
+  font-style: italic;
+}
+.redactor li {
+  line-height: 2.5rem;
+  list-style: none;
+  margin-left: 1em;
+}
+.redactor li::before {
+  content: "•";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ED5C01;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+.redactor img {
+  max-width: 100%;
+  margin-top: 2rem;
+}
+.redactor a {
+  color: #169CAB;
+}
+.redactor a:hover {
+  color: #ED5C01;
+}
+
+.games__content.redactor {
+  padding-right: 10rem;
 }
 
 .form {
@@ -336,9 +424,18 @@ html, body {
 .form-button:hover {
   background-color: #ED5C01;
 }
+.form-button-reverse {
+  background-color: #ED5C01;
+}
+.form-button-reverse:hover {
+  background-color: #052D3E;
+}
 .form-file {
   padding: 0.8% 2%;
   display: flex;
+}
+.form-list {
+  margin-bottom: 1rem;
 }
 .form label {
   width: 100%;
@@ -988,7 +1085,8 @@ html, body {
   position: fixed;
   height: 100%;
   box-sizing: border-box;
-  padding: 5rem 1rem 1rem;
+  padding: 1rem;
+  overflow: scroll;
 }
 .games__content {
   max-width: calc(100% - 300px);
@@ -996,6 +1094,9 @@ html, body {
   box-sizing: border-box;
   padding: 1rem;
   margin-left: 300px;
+}
+.games__content-bottom-text {
+  float: right;
 }
 .games__content-link {
   text-decoration: none;
@@ -1041,6 +1142,34 @@ html, body {
   width: 100%;
   margin-bottom: 1rem;
   font-weight: 400;
+}
+.games__form {
+  max-width: 80%;
+}
+
+li.games__content-specs-spec {
+  font-size: 1.222rem;
+  line-height: 1rem;
+}
+li.games__content-specs-spec a {
+  text-decoration: none;
+  color: #FBBD08;
+}
+li.games__content-specs-spec a:hover {
+  color: #052D3E;
+}
+
+.profile__left-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile__left-column__profile-pic {
+  width: 80%;
+  height: auto;
+}
+.profile__left-column a.profile {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

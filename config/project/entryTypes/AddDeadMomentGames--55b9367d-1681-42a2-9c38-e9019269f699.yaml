@@ -1,5 +1,5 @@
 fieldLayouts:
-  db91f7f9-3c01-4d5e-98ee-f0550284610f:
+  71567d4b-81f1-4403-aa24-b4adadabaa67:
     tabs:
       -
         elementCondition: null
@@ -26,29 +26,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 70507325-3e36-4878-9816-570cd970eed4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 05c3f2cb-70ce-45fd-adde-74f4be96cf0f # redactor
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: efb4dad6-c5b9-4b83-a244-9c458074122e
+            uid: d5fc6099-5057-4063-8a32-297feb268a7a
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 742e7ba0-cf72-4ce6-91d4-6f402fe5a0d5
+        uid: 12d1d679-10d3-458e-8e95-ff92fbaf60a7
         userCondition: null
-handle: about
+handle: AddDeadMomentGames
 hasTitleField: false
-name: About
-section: e7bf288e-7066-4622-9d28-96ee8a3a6a59 # About
+name: 'Dodemomentspelletje toevoegen'
+section: b654d6b4-8939-4ca1-a408-5c7f05f7d94e # Dodemomentspelletje toevoegen
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

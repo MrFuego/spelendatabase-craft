@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: about
-name: About
+handle: deadMomentGames
+name: 'Dode moment spelletjes'
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,6 @@ siteSettings:
   a196e0e6-3f10-4c9b-857f-27ac17884afa: # spelendatabase
     enabledByDefault: true
     hasUrls: true
-    template: _pages/redactor.twig
-    uriFormat: over
-type: single
+    template: simpleGames/_entry.twig
+    uriFormat: 'dodemomentspelletjes/{slug}'
+type: channel

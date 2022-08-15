@@ -1,0 +1,14 @@
+.profile{
+    &__left-column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__profile-pic{
+            width: 80%;
+            height: auto;
+        }
+        a.profile{
+            width: 100%;
+        }
+    }
+}
