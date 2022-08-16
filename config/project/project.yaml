@@ -1,4 +1,4 @@
-dateModified: 1660577147
+dateModified: 1660640516
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -56,6 +56,7 @@ meta:
     6a1c89a2-84a5-4ec6-825a-eee41066ca29: Homepage # Homepage
     6d1b6141-70c2-4c2a-841b-a036eeb10aae: 'Link naar pagina' # Link naar pagina
     6dfee47b-10a4-4592-bbb5-37c9f1d6d89f: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
+    6e6da057-c74a-4bb3-9626-52fa6603ebf1: Favorites
     6ead53d7-0002-4a4a-af83-1c0b3dce0c19: Login # Login
     6f7fb0b4-c460-4f71-a9d6-80d4dfa91ef5: 'Eén tegen allen opdrachten' # Eén tegen allen opdrachten
     6f7119f2-4379-47e0-ba06-f43685d65fff: 'Materiaal item' # Materiaal item
@@ -361,6 +362,25 @@ plugins:
     enabled: true
     licenseKey: PN7LQEN1FURWX0CI5YFY1D9Q
     schemaVersion: 1.0.4
+    settings:
+      allowDuplicates: false
+      cookieExpiry: 0
+      manageDisabledLists: true
+      mergeLastListOnLogin: true
+      pdfAllowRemoteImages: true
+      pdfFilenameFormat: 'Wishlist-{id}'
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pdfPath: _pdf/wishlist
+      pluginName: Wishlist
+      purgeEmptyGuestListsOnly: true
+      purgeEmptyListsOnly: true
+      purgeInactiveGuestListsDuration: P1D
+      purgeInactiveLists: true
+      purgeInactiveListsDuration: P3M
+      showListInfoTab: true
+      updateItemSearchIndexes: true
+      updateListSearchIndexes: true
 system:
   edition: pro
   live: true

@@ -1,0 +1,12 @@
+.tasks{
+    &__table{
+        width: 100%;
+        max-width: 80%;
+        &-row{
+            line-height: 2rem;
+            &:not(:first-child){
+                border-top: solid 2px $light-blue;
+            }
+        }
+    }
+}

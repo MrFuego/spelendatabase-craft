@@ -10,7 +10,7 @@
 {% endif %}
 
 {% block content %}
-    <div class="container games">
+    <div class="container games" id="game">
         <div class="games__left-column">
             <p class="games__content-specs txt-yellow"> 
                 <span class="txt-dark-blue"> Leeftijd: </span> 
@@ -80,7 +80,20 @@
                 {{entry.title}}
             </h1>
 
+            <button class="btn" id="printButton">
+                download pdf
+            </button>
+
+            <a href="/spelen/{{entry.id}}/edit">
+                <button class="btn">
+                    bewerk dit spel
+                </button>
+            </a>
+
             <p class="games__content-text">Toegevoegd door <a href="/gebruiker/{{entry.author.id}}" class="txt-medium txt-light-blue">{{ entry.author.username }}</a> op {{ entry.postDate | date("d/m/Y") }}</p>
+
+            <i class="fa-solid fa-download fa-sm"></i>
+            <i class="fa-regular fa-pen-to-square fa-sm"></i>
             
             <h3 class="games__content-subtitle txt-orange">
                 Inleiding
@@ -152,4 +165,20 @@
         </div>
     </div>
 
+    <script>
+        const printElement = document.getElementById('game');
+        const printButton = document.getElementById('printButton');
+
+        const opt = {
+            margin:       1,
+            filename:     "{{entry}}.pdf",
+            html2canvas:  { scale: 2 },
+        };
+
+        printButton.onclick = () => {
+            html2pdf(printElement, opt);
+            html2pdf.set(opt).from(printElement).save();
+            console.log("hey")
+        }
+    </script>
 {% endblock %}

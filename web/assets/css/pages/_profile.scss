@@ -3,12 +3,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        &__profile-pic{
-            width: 80%;
-            height: auto;
-        }
         a.profile{
             width: 100%;
         }
+    }
+    &__profile-pic{
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
     }
 }

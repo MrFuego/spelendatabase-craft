@@ -1164,12 +1164,24 @@ li.games__content-specs-spec a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-.profile__left-column__profile-pic {
-  width: 80%;
-  height: auto;
-}
 .profile__left-column a.profile {
   width: 100%;
+}
+.profile__profile-pic {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.tasks__table {
+  width: 100%;
+  max-width: 80%;
+}
+.tasks__table-row {
+  line-height: 2rem;
+}
+.tasks__table-row:not(:first-child) {
+  border-top: solid 2px #169CAB;
 }
 
 /*# sourceMappingURL=main.css.map */

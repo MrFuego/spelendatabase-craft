@@ -9,6 +9,9 @@
 
     <div class="container">
         <div class="games__left-column">
+            <button class="btn form-button form-button-reverse" id="printButton">
+                download pdf
+            </button>
         </div>
         <div class="games__content">
             <h1 class="page-title">Alle één tegen allen opdrachten</h1>
@@ -55,10 +58,10 @@
                 <p class="nice-to-know"> Je kunt zelf opdrachten toevoegen als je ingelogd bent </p>
             {% endif %}
 
-            <table>
+            <table class="tasks__table" id="game">
                 <tbody>
                     {% for task in tasks %}
-                        <tr>
+                        <tr class="tasks__table-row">
                             <td>
                             {{ task.title }}
                             </td>
@@ -68,5 +71,22 @@
             </table>
         </div>
     </div>
+
+     <script>
+        const printElement = document.getElementById('game');
+        const printButton = document.getElementById('printButton');
+
+        const opt = {
+            margin:       1,
+            filename:     "{{entry}}.pdf",
+            html2canvas:  { scale: 2 },
+        };
+
+        printButton.onclick = () => {
+            html2pdf(printElement, opt);
+            html2pdf.set(opt).from(printElement).save();
+            console.log("hey")
+        }
+    </script>
     
 {% endblock %}

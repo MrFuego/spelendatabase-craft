@@ -10,8 +10,17 @@
             <a class="profile" href="/dodemomentspelletjes/toevoegen">
                 <button type="submit" class="btn form-button form-button-reverse">Een dodemomentspelletje toevoegen</button>
             </a>
+            <button class="btn form-button form-button-reverse" id="printButton">
+                download pdf
+            </button>
+
+            {# <a class="profile" href="/spelen/{{entry.id}}/edit">
+                <button class="btn form-button form-button-reverse">
+                    bewerk dit spel
+                </button>
+            </a> #}
         </div>
-        <div class="games__content">
+        <div class="games__content" id="game">
             <h1 class="games__content-mainTitle txt-orange">
                 {{entry.title}}
             </h1>
@@ -25,8 +34,40 @@
             <p class="games__content-bottom-text"> 
                 Laatst bijgewerkt op {{ entry.dateUpdated | date ("d/m/yy") }} om {{ entry.dateUpdated | date ("H:i") }} 
             </p>
+
+            {# Render the `comments.js` file - exclude the inline JS #}
+            {{ craft.comments.renderJs(entry.id, {}, false) }}
+
+            {# Fetch the variables required for the comments JS #}
+            {% set jsVariables = craft.comments.getJsVariables(entry.id) %}
+
+            {# Wait for the document to be ready, then initialise #}
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Populate the ID and the settings
+                    new Comments.Instance('{{ jsVariables.id }}', {{ jsVariables.settings | json_encode | raw }});
+                });
+            </script>
+            {{ craft.comments.render(entry.id) }}
            
         </div>
     </div>
+
+    <script>
+        const printElement = document.getElementById('game');
+        const printButton = document.getElementById('printButton');
+
+        const opt = {
+            margin:       1,
+            filename:     "{{entry}}.pdf",
+            html2canvas:  { scale: 2 },
+        };
+
+        printButton.onclick = () => {
+            html2pdf(printElement, opt);
+            html2pdf.set(opt).from(printElement).save();
+            console.log("hey")
+        }
+    </script>
     
 {% endblock %}
