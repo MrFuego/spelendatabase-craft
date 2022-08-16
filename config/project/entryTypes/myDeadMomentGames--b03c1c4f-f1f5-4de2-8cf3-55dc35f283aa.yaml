@@ -1,5 +1,5 @@
 fieldLayouts:
-  e293aff0-ec49-4e72-940b-c71f648770ad:
+  3eeb693e-027a-4197-9939-3532359c1bca:
     tabs:
       -
         elementCondition: null
@@ -26,30 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 745b8605-e38d-4270-a07d-c156d467eedf
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d2b2b010-6660-4194-9726-1b9962f727e0
+            uid: 5aee874d-04c1-47b9-b9be-5938f5cad7c0
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: a24cd02f-d497-4290-a29b-286e45a79d7f
+        uid: 056ff346-c4c6-4f23-a8dd-e0e160442c9e
         userCondition: null
-handle: myProfile
-hasTitleField: true
-name: 'Mijn Profiel'
-section: 11b6b233-12c3-4b4f-8b21-7db92eb95807 # Mijn Profiel
+handle: myDeadMomentGames
+hasTitleField: false
+name: 'Mijn dodemomentspelletje'
+section: f19d176f-7128-401e-8b26-011cd7aad5f7 # Mijn dodemomentspelletje
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

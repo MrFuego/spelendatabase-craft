@@ -13,7 +13,9 @@
 {% block content %}
     <div class="container games">
         <div class="games__left-column">
-            <h1 class="page-title">Zoekbalk</h1>
+            <a class="profile" href="/mijnProfiel">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar mijn profiel</button>
+            </a>
         </div>
         <div class="games__content">
             {% for game in games %}

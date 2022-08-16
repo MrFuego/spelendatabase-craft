@@ -1,0 +1,93 @@
+field: 0033ad93-75b0-46bf-af03-b5686b901bf8 # Spelen Navigatie
+fieldLayouts:
+  5a22c92c-e81d-4be4-877f-b95662740403:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: caa64a59-e2d6-41ee-b915-08d1fb922d15 # item Naam
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd28fe48-0825-4715-9989-0b1bef53b248
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a238770-7d8c-4794-a727-2c66c79169ea # link naar pagina
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a58245fe-98ab-4688-86e5-76ff9b1a1922
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4e3cc4fd-5de2-45af-8064-de2e6a408b1c
+        userCondition: null
+fields:
+  0a238770-7d8c-4794-a727-2c66c79169ea: # link naar pagina
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: null
+    name: 'link naar pagina'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  caa64a59-e2d6-41ee-b915-08d1fb922d15: # item Naam
+    columnSuffix: vbhxuwkt
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemName
+    instructions: null
+    name: 'item Naam'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: spelNav
+name: 'spel nav'
+sortOrder: 1

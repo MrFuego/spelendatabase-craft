@@ -8,14 +8,6 @@
 <header id="main-header" class="main-header {{headerClass}}">
     {% include "_includes/components/navigation/left_nav" %}
 
-    <div class="main-header__center">
-        <a class="main-navigation-item" href="{{ craft.app.sites.primarySite.baseUrl }}#home"> 
-            {# {{ svg(siteIdentity.logo.inline)|attr({ 
-                class:'main-header__center-img'
-            }) }} #}
-        </a>
-    </div>
-
     {% include "_includes/components/navigation/right_nav" %}
 </header>
 <nav class="mobile-nav">

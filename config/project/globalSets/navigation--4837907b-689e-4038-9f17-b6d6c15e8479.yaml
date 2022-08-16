@@ -6,6 +6,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 0033ad93-75b0-46bf-af03-b5686b901bf8 # Spelen Navigatie
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf0d4698-c4e4-4ff1-85be-644fa00a1b7c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 1d8f21b2-d097-4a76-a1c3-b597e1862651 # Navigatie item
             instructions: null
             label: null

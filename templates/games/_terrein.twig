@@ -15,9 +15,9 @@
 {% block content %}
     <div class="container games">
         <div class="games__left-column">
-            <h1>Terrein {{ type }}</h1>
         </div>
         <div class="games__content">
+            <h1 class="page-title">Terrein {{ type }}</h1>
             {% for game in games %}
                 <a href="{{ game.getUrl() }}" class="games__content-link">
                     <div class="games__content__item">

@@ -1,5 +1,5 @@
 fieldLayouts:
-  3b54177a-9fc7-4e10-8e60-07790c4ccce3:
+  7aaa82ff-db83-467f-a378-35baf6c0941a:
     tabs:
       -
         elementCondition: null
@@ -26,42 +26,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e31781f0-f7e9-48e7-9d12-6fc247534263
+            uid: 3c76893a-4bcb-4190-aece-02662fb1c210
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b037657d-9197-46c5-8666-b2c35c5c4b88 # Uitgelichte blogpost
+            fieldUid: 05c3f2cb-70ce-45fd-adde-74f4be96cf0f # redactor
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2a320cad-eacf-471d-acec-c2ca2d6434e4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 970e3108-4155-46ed-957e-e7fa0fd79df3
+            uid: 5565593c-5189-4fa9-820b-e4a41d0095b3
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 8ff10b1e-87f4-42e6-9fe3-f1a6b4c1d4fc
+        uid: 017e4141-fa13-4d94-9a33-16477087f88e
         userCondition: null
-handle: homepage
-hasTitleField: false
-name: Homepage
-section: 9f4915ff-f144-41f9-b90e-4d517b0950bd # Homepage
+handle: default
+hasTitleField: true
+name: Standaard
+section: b9c67985-d40e-4cbd-996d-9b6f511a9f48 # Blogberichten
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

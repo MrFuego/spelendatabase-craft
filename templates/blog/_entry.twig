@@ -3,7 +3,30 @@
 {% block content %}
 
     <div class="container">
-        <h1> Hier komt er één blog bericht </h1>
+        <div class="games__left-column profile__left-column">
+
+        </div>
+        <div class="games__content redactor">
+            <h1>{{ entry.title }}</h1>
+            {{ entry.redactor }}
+
+
+            {# Render the `comments.js` file - exclude the inline JS #}
+            {{ craft.comments.renderJs(entry.id, {}, false) }}
+
+            {# Fetch the variables required for the comments JS #}
+            {% set jsVariables = craft.comments.getJsVariables(entry.id) %}
+
+            {# Wait for the document to be ready, then initialise #}
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Populate the ID and the settings
+                    new Comments.Instance('{{ jsVariables.id }}', {{ jsVariables.settings | json_encode | raw }});
+                });
+            </script>
+            {{ craft.comments.render(entry.id) }}
+           
+        </div>
     </div>
     
 {% endblock %}

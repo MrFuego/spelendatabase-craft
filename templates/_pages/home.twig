@@ -4,26 +4,16 @@
 
     <div class="container home">
         <div class="block-50">
-            <div class="home__article">
-                <h1 class="home__article-title">Hier komt er een titel</h1>
-                <p class="home__article-text">
-                    Jean-François Champollion corpus callosum rich in heavy atoms encyclopaedia galactica finite but unbounded adipisci velit. Not a sunrise but a galaxyrise courage of our questions network of wormholes with pretty stories for which there's little good evidence invent the universe another world. Bits of moving fluff courage of our questions kindling the energy hidden in matter quis nostrum exercitationem ullam corporis suscipit laboriosam hearts of the stars vanquish the impossible.
-                </p>
-
-                <p class="home__article-text">
-                    The carbon in our apple pies astonishment realm of the galaxies sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem prime number light years. Stirred by starlight network of wormholes quis nostrum exercitationem ullam corporis suscipit laboriosam a very small stage in a vast cosmic arena descended from astronomers invent the universe. Dream of the mind's eye nisi ut aliquid ex ea commodi consequatur adipisci velit vel illum qui dolorem eum fugiat quo voluptas nulla pariatur Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                </p>
-            </div>
-            <div class="home__article">
-                <h1 class="home__article-title">Hier komt er nog een titel</h1>
-                <p class="home__article-text">
-                    Kindling the energy hidden in matter tingling of the spine astonishment cosmos science Sea of Tranquility. Adipisci velit qui dolorem ipsum quia dolor sit amet vel illum qui dolorem eum fugiat quo voluptas nulla pariatur vastness is bearable only through love permanence of the stars vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Qui dolorem ipsum quia dolor sit amet encyclopaedia galactica Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit from which we spring Neque porro quisquam est with pretty stories for which there's little good evidence?
-                </p>
-
-                <p class="home__article-text">
-                    Invent the universe a billion trillion gathered by gravity not a sunrise but a galaxyrise tendrils of gossamer clouds tesseract. Consectetur concept of the number one radio telescope quis nostrum exercitationem ullam corporis suscipit laboriosam quis nostrum exercitationem ullam corporis suscipit laboriosam how far away. Quis nostrum exercitationem ullam corporis suscipit laboriosam star stuff harvesting star light Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium hearts of the stars vastness is bearable only through love?
-                </p>
-            </div>
+            {% for blog in entry.featuredBlogPost %}
+                <a href="{{ blog.getUrl }}" class="home__article">
+                    <h1 class="home__article-title">
+                        {{blog.title}}
+                    </h1>
+                    <div class="home__article-text">
+                        {{ blog.redactor }}
+                    </div>
+                </a>
+            {% endfor %}
         </div>
         <div class="block-50">
             {% for homepageUrl in entry.homepageUrl.all() %}

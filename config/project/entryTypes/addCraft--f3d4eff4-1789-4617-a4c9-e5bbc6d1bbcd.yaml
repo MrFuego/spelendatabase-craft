@@ -1,5 +1,5 @@
 fieldLayouts:
-  e293aff0-ec49-4e72-940b-c71f648770ad:
+  a8e7690b-7a0b-4c6d-b8cf-3c145bdfba85:
     tabs:
       -
         elementCondition: null
@@ -26,30 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 745b8605-e38d-4270-a07d-c156d467eedf
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d2b2b010-6660-4194-9726-1b9962f727e0
+            uid: f6497f25-1c2b-4f51-a39a-84813148c924
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: a24cd02f-d497-4290-a29b-286e45a79d7f
+        uid: d9e41ff9-18be-4637-89c7-576055a5aa38
         userCondition: null
-handle: myProfile
-hasTitleField: true
-name: 'Mijn Profiel'
-section: 11b6b233-12c3-4b4f-8b21-7db92eb95807 # Mijn Profiel
+handle: addCraft
+hasTitleField: false
+name: 'Knutselopdracht toevoegen'
+section: adde1b0a-fe7f-4b28-8628-ae62f6ad5a5d # Knutselopdracht toevoegen
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

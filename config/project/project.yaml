@@ -1,4 +1,4 @@
-dateModified: 1660640516
+dateModified: 1660660831
 elementSources:
   verbb\comments\elements\Comment:
     -
@@ -35,6 +35,7 @@ fs:
     url: '@web/uploads'
 meta:
   __names__:
+    0a238770-7d8c-4794-a727-2c66c79169ea: 'link naar pagina' # link naar pagina
     0ae3328f-cf7d-475c-afbe-b3254f0112ea: Register # Register
     0e18f0fc-7dbd-4a1e-b8f8-07cbf293100b: 'Site Identity' # Site Identity
     1cc25933-d89f-446d-a114-b66154169e66: 'Materiaal lijst' # Materiaal lijst
@@ -53,23 +54,28 @@ meta:
     5c7ffd2c-f680-4e53-ae10-eab3a0435bf4: 'Maximum aantal spelers' # Maximum aantal spelers
     5c29cdee-b532-4da6-94de-fc4b3ef39467: Terrein # Terrein
     5dccd971-e9cf-4888-8f8b-b6518e7621dc: 'is publiek' # is publiek
+    5f94dadc-3d09-41d0-812d-ebde9b91d3a8: Blog # Blog
     6a1c89a2-84a5-4ec6-825a-eee41066ca29: Homepage # Homepage
     6d1b6141-70c2-4c2a-841b-a036eeb10aae: 'Link naar pagina' # Link naar pagina
     6dfee47b-10a4-4592-bbb5-37c9f1d6d89f: 'Ondersteuning om zelf een spel te maken' # Ondersteuning om zelf een spel te maken
-    6e6da057-c74a-4bb3-9626-52fa6603ebf1: Favorites
+    6e6da057-c74a-4bb3-9626-52fa6603ebf1: Favorites # Favorites
     6ead53d7-0002-4a4a-af83-1c0b3dce0c19: Login # Login
+    6eda61ff-3cee-4630-a673-98b001b9b748: Blog # Blog
     6f7fb0b4-c460-4f71-a9d6-80d4dfa91ef5: 'Eén tegen allen opdrachten' # Eén tegen allen opdrachten
     6f7119f2-4379-47e0-ba06-f43685d65fff: 'Materiaal item' # Materiaal item
     8a13966e-c6f9-4bc1-b242-db834badd512: 'Maximum leeftijd' # Maximum leeftijd
     8cb30964-de8f-4299-9a2b-7e8cfbe03360: Homepage # Homepage
     08d1e13d-6103-45e5-8908-49b8c1280505: 'Profiel bewerken' # Profiel bewerken
+    8d3c63d4-dcaf-494b-b873-229679852123: 'Mijn knutselopdrachten' # Mijn knutselopdrachten
     8fee1281-9138-49c3-8b8e-5343244c2be3: Common # Common
+    9e4a4d57-8218-48f5-95a2-350a4b150ddc: 'Mijn knutselopdrachten' # Mijn knutselopdrachten
     9f4915ff-f144-41f9-b90e-4d517b0950bd: Homepage # Homepage
     11b6b233-12c3-4b4f-8b21-7db92eb95807: 'Mijn Profiel' # Mijn Profiel
     21efaced-8678-4323-a87b-a1054772fab0: Link # Link
     25a453ed-97ea-4480-921e-0c572facc9d3: Uploads # Uploads
     27b33b16-da29-4cd2-a97b-39557f2c0e23: Standaard # Standaard
     28ce2114-46d8-4431-a66b-5864db7ab615: 'Spel type' # Spel type
+    0033ad93-75b0-46bf-af03-b5686b901bf8: 'Spelen Navigatie' # Spelen Navigatie
     33edeee0-e5bd-47bb-a308-f995fd7baec7: url # url
     38a829e3-b181-49ee-baa2-561b893a6e0a: 'Spel materiaal' # Spel materiaal
     46d1f524-1888-4252-966d-d33a9d20d89f: Standaard # Standaard
@@ -90,20 +96,30 @@ meta:
     940a4856-c438-4dc9-ba20-96043efe8c78: 'Doel van het spel' # Doel van het spel
     6812e2a8-90da-4343-a3d0-a7ecdded2a20: Wishlist # Wishlist
     06865b08-0e90-49f8-a9fc-67040777d7e1: Naam # Naam
+    7508f146-500b-454c-b8a0-12390b0089dd: 'spel nav' # spel nav
     7813ec25-2f74-44af-b2d4-87056478950a: fze # fze
     8086b01c-8350-4557-8e6e-60255bcc0337: 'matrix Name' # matrix Name
+    926861b1-5ccd-4b3d-985b-614aa962bc5d: Knutselopdrachten # Knutselopdrachten
     949190a5-0720-4d54-af48-03207ae923c2: Standaard # Standaard
     4837907b-689e-4038-9f17-b6d6c15e8479: Navigatie # Navigatie
     5402668f-57a2-4d2d-a55b-15760b93340f: 'Minimum aantal spelers' # Minimum aantal spelers
     91772575-2882-41d6-95d7-d5a54d46fb06: 'Thema type' # Thema type
     a9d03940-ad33-4c4f-8773-a1eb25928afb: 'Overzicht spelen' # Overzicht spelen
     a196e0e6-3f10-4c9b-857f-27ac17884afa: spelendatabase # spelendatabase
+    a621ad91-c112-4a5d-aed1-9ebfb7b1fab6: 'Overzicht knutselopdrachten' # Overzicht knutselopdrachten
+    a31540ae-f9f2-4f76-b6a2-f8b11080b4cb: Standaard # Standaard
+    adde1b0a-fe7f-4b28-8628-ae62f6ad5a5d: 'Knutselopdracht toevoegen' # Knutselopdracht toevoegen
+    b03c1c4f-f1f5-4de2-8cf3-55dc35f283aa: 'Mijn dodemomentspelletje' # Mijn dodemomentspelletje
+    b037657d-9197-46c5-8666-b2c35c5c4b88: 'Uitgelichte blogpost' # Uitgelichte blogpost
     b3b5d1d5-4a61-44db-b610-8f74faf95f51: 'Overzicht spelen' # Overzicht spelen
+    b9c67985-d40e-4cbd-996d-9b6f511a9f48: Blogberichten # Blogberichten
     b654d6b4-8939-4ca1-a408-5c7f05f7d94e: 'Dodemomentspelletje toevoegen' # Dodemomentspelletje toevoegen
     b92690fb-549e-494d-8c1b-1481340be882: 'Wachtwoord Reset' # Wachtwoord Reset
     bb4dab03-1b87-4c75-b141-84eee5b64c8b: 'Dode moment spelletjes' # Dode moment spelletjes
     c9c4c4e4-1594-49b6-86fc-377c72c8303a: spelendatabase # spelendatabase
     c16c586b-d1cf-4d7d-b9e7-b3d915e296e1: Speelduur # Speelduur
+    c7895103-1c1c-4d23-920a-a99413e20b96: Standaard # Standaard
+    caa64a59-e2d6-41ee-b915-08d1fb922d15: 'item Naam' # item Naam
     cb0443b6-2e43-4d70-b39c-1e9ab6876455: 'Overzicht één tegen allen opdrachten' # Overzicht één tegen allen opdrachten
     cb5fd577-a260-423e-8777-dc3e59af997d: Intro # Intro
     cbd07e0a-3383-4035-924b-222116f901cb: 'Willekeurig spel' # Willekeurig spel
@@ -112,6 +128,7 @@ meta:
     d92743f8-2eb6-4650-8b71-f7cf353ed16e: 'Profiel bewerken' # Profiel bewerken
     d94396ce-5586-4fae-adcc-084f65e8ed20: Intensiteit # Intensiteit
     db756868-c5be-4387-a9ca-36e74e7cfd2c: Login # Login
+    df1ed38c-1bc0-4b4f-a618-65b32ef2dbff: 'Overzicht knutselopdrachten' # Overzicht knutselopdrachten
     df4ee256-846a-416c-9e10-243b726f0e71: 'Minimum aantal spelers' # Minimum aantal spelers
     e2a75ff5-e879-43b9-900a-162b0240017c: SiteIdentity # SiteIdentity
     e5c64ea9-1ade-4016-a8b7-9bab6c10d632: Register # Register
@@ -122,8 +139,10 @@ meta:
     ec954f96-2299-4b7d-9fbb-97c974832a96: Title # Title
     f014de6c-fdcb-4f4b-a023-354dbb6a4e5e: 'Wachtwoord Reset' # Wachtwoord Reset
     f2b91cbe-dc96-4130-a71f-326e99ec6d1e: testMatrix # testMatrix
+    f3d4eff4-1789-4617-a4c9-e5bbc6d1bbcd: 'Knutselopdracht toevoegen' # Knutselopdracht toevoegen
     f5e119ac-c04b-4593-aeef-f2a70dad5a26: Thema # Thema
     f8b402c2-1415-4442-ad43-66490a00ab05: 'Terrein type' # Terrein type
+    f19d176f-7128-401e-8b26-011cd7aad5f7: 'Mijn dodemomentspelletje' # Mijn dodemomentspelletje
     f2589fc5-09a5-4bc1-8d53-b6688f239a39: Spelen # Spelen
     f9172996-eb36-48fb-84f8-4f35c3728c65: 'hoeveelheid materiaal' # hoeveelheid materiaal
     fbc67a4a-697c-4b64-bf27-60d2e76ca405: Spel # Spel

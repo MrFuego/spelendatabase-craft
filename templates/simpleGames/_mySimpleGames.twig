@@ -1,9 +1,43 @@
 {% extends "_layouts/site" %}
+
+{# get the current logged in user #}
+{% set user = currentUser %}
+
+{% set simpleGames = craft.entries({
+    section: 'deadMomentGames',
+    authorId: user.id,
+})
+.orderBy('postDate DESC') %}
   
 {% block content %}
 
     <div class="container">
-        <h1> Hier komt er een overzicht van al mijn dode moment spelletjes</h1>
+        <div class="games__left-column">
+            <a class="profile" href="/mijnProfiel">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar mijn profiel</button>
+            </a>
+        </div>
+        <div class="games__content">
+            <h1 class="page-title">Mijn dodemomentspelletjes</h1>
+
+            {% if simpleGames.one() == "" %}
+                <p class="nice-to-know"> Je hebt nog geen dodemomentspelletjes </p>
+            {% endif %}
+            
+            <p class="nice-to-know"> Je kunt <a href="dodemomentspelletjes/toevoegen" class="nice-link">hier</a> nog een dodemomentspelletje toevoegen </p>
+            {% for simpleGame in simpleGames %}
+                <a href="{{ simpleGame.getUrl() }}" class="games__content-link">
+                    <div class="games__content__item">
+                        <h2 class="games__content-title txt-light-blue">
+                            {{simpleGame.title}}
+                        </h2>
+                        <p class="games__content-text txt-dark-blue">
+                            {{simpleGame.explenation}} 
+                        </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
     </div>
     
 {% endblock %}

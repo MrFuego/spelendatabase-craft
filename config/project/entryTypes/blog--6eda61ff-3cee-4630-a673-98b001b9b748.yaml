@@ -1,5 +1,5 @@
 fieldLayouts:
-  e293aff0-ec49-4e72-940b-c71f648770ad:
+  9691c496-96ad-45b9-b8a9-67168721ccb0:
     tabs:
       -
         elementCondition: null
@@ -26,30 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 745b8605-e38d-4270-a07d-c156d467eedf
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d2b2b010-6660-4194-9726-1b9962f727e0
+            uid: a0404ccd-5504-406a-8f8c-facddca553ed
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: a24cd02f-d497-4290-a29b-286e45a79d7f
+        uid: 60f67d07-18fa-4ab9-820b-c3e17674c95c
         userCondition: null
-handle: myProfile
-hasTitleField: true
-name: 'Mijn Profiel'
-section: 11b6b233-12c3-4b4f-8b21-7db92eb95807 # Mijn Profiel
+handle: blog
+hasTitleField: false
+name: Blog
+section: 5f94dadc-3d09-41d0-812d-ebde9b91d3a8 # Blog
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

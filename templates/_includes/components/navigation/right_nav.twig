@@ -16,8 +16,21 @@
         
     {% endfor %} #}
 
-    <a class="main-navigation-item right-nav-item {{ activeLink == "spelen" ? 'main-navigation-item--active' }}" href="/spelen">Spelen</a>
+    {% set gameNavigation = navigation.gameNavigation.all() %}
 
+        <div class="dropdown">
+            <a class="main-navigation-item right-nav-item {{ activeLink == "spelen" ? 'main-navigation-item--active' }}" href="/spelen">Spelen</a>
+            <div class="dropdown-content">
+                {% for gameNav in gameNavigation %}
+                    
+                    <a href="{{gameNav.itemLink.one().getUrl() }}">{{ gameNav.itemName }}</a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+
+    <a class="main-navigation-item right-nav-item {{ activeLink == "blog" ? 'main-navigation-item--active' }}" href="/blog">Blog</a>
     <a class="main-navigation-item right-nav-item {{ activeLink == "over" ? 'main-navigation-item--active' }}" href="/over">Over</a>
 
 

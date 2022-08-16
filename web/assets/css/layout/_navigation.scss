@@ -3,7 +3,6 @@
     font-size: 3rem;
     font-family: $secondary-font;
     font-weight: bold;
-    max-width: 40%;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -16,11 +15,44 @@
         &:hover{
             color: $orange;
         }
+        
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        font-family: $secondary-font;
+        font-weight: bold;
+        &-content {
+            display: none;
+            position: absolute;
+            background-color: $yellow;
+            min-width: 160px;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1;
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: $secondary-font;
+                font-weight: bold;
+                &:hover {
+                    background-color: $dark-blue;
+                    color: $creme;
+                }
+            }
+        }
+        &:hover{
+            .dropdown-content {
+                display: block;
+            }
+        }
     }
 }
 
 .left-nav{
     justify-content: flex-start;
+    max-width: 30%;
     &-item{
         margin-right: $nav-space-between;
         :last-child{
@@ -31,6 +63,7 @@
 
 .right-nav{
     justify-content: flex-end;
+    max-width: 80%;
     &-item{
         margin-left: $nav-space-between;
         font-size: 2rem;
@@ -44,6 +77,7 @@
     .left-nav{
         &-item{
             margin-right: calc($nav-space-between/2);
+            font-size: 3rem;
         }
     }
     
@@ -65,6 +99,41 @@
             width: 100%;
             text-align: center;
             margin: 10px 0;
+        }
+        .dropdown {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            &-content {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                min-width: 100%;
+                a {
+                    color: $dark-blue;
+                    text-decoration: none;
+                    display: block;
+                    font-family: $secondary-font;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 2rem;
+                    &:hover {
+                        background-color: $yellow;
+                        color: $orange;
+                    }
+                }
+            }
+            &:hover{
+                .dropdown-content {
+                    display: flex;
+                }
+            }
         }
     }
 

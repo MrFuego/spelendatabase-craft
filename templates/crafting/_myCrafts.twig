@@ -1,9 +1,43 @@
 {% extends "_layouts/site" %}
+
+{# get the current logged in user #}
+{% set user = currentUser %}
+
+{% set crafts = craft.entries({
+    section: 'crafts',
+    authorId: user.id,
+})
+.orderBy('postDate DESC') %}
   
 {% block content %}
 
     <div class="container">
-        <h1> Hier komen mijn knutselideeën </h1>
+        <div class="games__left-column">
+            <a class="profile" href="/mijnProfiel">
+                <button type="submit" class="btn form-button form-button-reverse">Terug naar mijn profiel</button>
+            </a>
+        </div>
+        <div class="games__content">
+            <h1 class="page-title">Mijn knutselopdrachten</h1>
+
+            {% if crafts.one() == "" %}
+                <p class="nice-to-know"> Je hebt nog geen knutselopdrachten </p>
+            {% endif %}
+            
+            <p class="nice-to-know"> Je kunt <a href="knutselopdrachten/toevoegen" class="nice-link">hier</a> nog een knutselopdracht toevoegen </p>
+            {% for craft in crafts %}
+                <a href="{{ craft.getUrl() }}" class="games__content-link">
+                    <div class="games__content__item">
+                        <h2 class="games__content-title txt-light-blue">
+                            {{craft.title}}
+                        </h2>
+                        <p class="games__content-text txt-dark-blue">
+                            {{craft.explenation}} 
+                        </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
     </div>
     
 {% endblock %}

@@ -210,37 +210,31 @@ h4{
   font-weight: 400;
 }
 
-/*
-
 @media only screen and (max-width: 1060px) {
-    html, body {
-        font-size: 20px
-    }
+  html, body, div, p {
+    font-size: 20px;
+  }
 }
-
 @media only screen and (max-width: 960px) {
-    html, body {
-        font-size: 18px
-    }
+  html, body, div, p {
+    font-size: 18px;
+  }
 }
-
 @media only screen and (max-width: 860px) {
-    html, body {
-        font-size: 16px
-    }
+  html, body, div, p {
+    font-size: 16px;
+  }
 }
-
 @media only screen and (max-width: 760px) {
-    html, body {
-        font-size: 14px
-    }
+  html, body, div, p {
+    font-size: 14px;
+  }
 }
-
 @media only screen and (max-width: 560px) {
-    html, body {
-        font-size: 12px
-    }
-} */
+  html, body, div, p {
+    font-size: 12px;
+  }
+}
 html, body {
   margin: 0px;
   height: 100%;
@@ -326,6 +320,7 @@ html, body {
   font-size: 1.222rem;
   line-height: 1.667rem;
   margin-top: 1rem;
+  font-weight: 300;
 }
 .redactor strong {
   font-weight: bold;
@@ -420,6 +415,9 @@ html, body {
 }
 .form-button-50 {
   width: 50%;
+}
+.form-button-25 {
+  width: 25%;
 }
 .form-button:hover {
   background-color: #ED5C01;
@@ -528,7 +526,6 @@ html, body {
   font-size: 3rem;
   font-family: "Amatic SC", sans-serif;
   font-weight: bold;
-  max-width: 40%;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -543,9 +540,39 @@ html, body {
 .main-navigation-item:hover {
   color: #ED5C01;
 }
+.main-navigation .dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+}
+.main-navigation .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBBD08;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+.main-navigation .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+}
+.main-navigation .dropdown-content a:hover {
+  background-color: #052D3E;
+  color: #EBE3CB;
+}
+.main-navigation .dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .left-nav {
   justify-content: flex-start;
+  max-width: 30%;
 }
 .left-nav-item {
   margin-right: 10%;
@@ -556,6 +583,7 @@ html, body {
 
 .right-nav {
   justify-content: flex-end;
+  max-width: 80%;
 }
 .right-nav-item {
   margin-left: 10%;
@@ -568,6 +596,7 @@ html, body {
 @media only screen and (max-width: 1350px) {
   .left-nav-item {
     margin-right: 5%;
+    font-size: 3rem;
   }
 
   .right-nav-item {
@@ -586,6 +615,39 @@ html, body {
     width: 100%;
     text-align: center;
     margin: 10px 0;
+  }
+  .main-navigation .dropdown {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .main-navigation .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-width: 100%;
+  }
+  .main-navigation .dropdown-content a {
+    color: #052D3E;
+    text-decoration: none;
+    display: block;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .main-navigation .dropdown-content a:hover {
+    background-color: #FBBD08;
+    color: #ED5C01;
+  }
+  .main-navigation .dropdown:hover .dropdown-content {
+    display: flex;
   }
 
   .left-nav {
@@ -1006,11 +1068,14 @@ html, body {
   max-height: calc(50% - 1rem);
   width: calc(100% - 1rem);
   box-sizing: border-box;
-  border: 2pt solid #169CAB;
   background-color: #169CAB;
   margin: 0.5rem;
   padding: 0.5rem;
   overflow: hidden;
+  text-decoration: none;
+}
+.home__article:hover {
+  background-color: #ED5C01;
 }
 .home__article-title {
   font-size: 2rem;
@@ -1020,13 +1085,21 @@ html, body {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.home__article-text {
+.home__article-text p {
   font-size: 1.222rem;
   line-height: 1.667rem;
   font-weight: 300;
   color: #052D3E;
 }
 
+@media only screen and (max-width: 960px) {
+  .home .block-50:nth-child(1) {
+    display: none;
+  }
+  .home .block-50:nth-child(2) {
+    max-width: 100%;
+  }
+}
 .auth__block {
   height: 100%;
 }
@@ -1159,6 +1232,15 @@ li.games__content-specs-spec a:hover {
   color: #052D3E;
 }
 
+@media only screen and (max-width: 768px) {
+  .games__left-column {
+    display: none;
+  }
+  .games__content {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
 .profile__left-column {
   display: flex;
   flex-wrap: wrap;
@@ -1172,7 +1254,76 @@ li.games__content-specs-spec a:hover {
   width: 200px;
   height: 200px;
 }
+.profile__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile__content .page-title {
+  width: 100%;
+}
+.profile__content .profile__link {
+  max-width: 33.33%;
+  width: 100%;
+  height: 100%;
+  max-height: calc((100% - 3rem) / 3);
+  box-sizing: border-box;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.profile__content .profile__link-item {
+  background-color: #052D3E;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20% 25%;
+}
+.profile__content .profile__link-item:hover {
+  background-color: #ED5C01;
+}
+.profile__content .profile__link-title {
+  color: #FBBD08;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
 
+@media only screen and (max-width: 1180px) {
+  .profile__content .profile__link {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .profile__left-column {
+    display: none;
+  }
+  .profile__left-column a.profile {
+    width: 100%;
+  }
+  .profile__profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+  .profile__content .profile__link {
+    max-width: 50%;
+  }
+  .profile__content .profile__link-item {
+    padding: 20% 25%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .profile__content .profile__link {
+    max-width: 100%;
+    margin-bottom: -100px;
+    padding: 0;
+  }
+  .profile__content .profile__link-item {
+    padding: 5%;
+    height: 50%;
+  }
+}
 .tasks__table {
   width: 100%;
   max-width: 80%;

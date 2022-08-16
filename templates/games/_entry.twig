@@ -80,16 +80,6 @@
                 {{entry.title}}
             </h1>
 
-            <button class="btn" id="printButton">
-                download pdf
-            </button>
-
-            <a href="/spelen/{{entry.id}}/edit">
-                <button class="btn">
-                    bewerk dit spel
-                </button>
-            </a>
-
             <p class="games__content-text">Toegevoegd door <a href="/gebruiker/{{entry.author.id}}" class="txt-medium txt-light-blue">{{ entry.author.username }}</a> op {{ entry.postDate | date("d/m/Y") }}</p>
 
             <i class="fa-solid fa-download fa-sm"></i>
@@ -146,6 +136,16 @@
             <p class="games__content-bottom-text"> 
                 Laatst bijgewerkt op {{ entry.dateUpdated | date ("d/m/yy") }} om {{ entry.dateUpdated | date ("H:i") }} 
             </p>
+
+            <button class="btn form-button form-button-25" id="printButton">
+                download pdf
+            </button>
+
+            <a href="/spelen/{{entry.id}}/edit">
+                <button class="btn form-button form-button-25">
+                    bewerk dit spel
+                </button>
+            </a>
 
             {# Render the `comments.js` file - exclude the inline JS #}
             {{ craft.comments.renderJs(entry.id, {}, false) }}

@@ -18,11 +18,15 @@
     {% else %}
 
         <div class="games__left-column">
-            Geweldig, dit is het profiel van: 
-            {{ user.username}}
+            {{ user.photo.getImg|attr({
+                id: 'user-photo',
+                class: 'profile__profile-pic',
+                alt: user.friendlyName,
+            }) }}
         </div>
         {# Spelen oplijsten die publiek staan van deze gebruiker #}
         <div class="games__content">
+            <h1 class="page-title">Dit is het profiel van {{ user.username }}</h1>
             Spelen | Dode momentspelletjes | Knutselopdrachten | Blogberichten (als deze er zijn)
             {% for game in games %}
                 <a href="{{ game.getUrl() }}" class="games__content-link">

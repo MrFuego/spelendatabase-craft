@@ -1,5 +1,5 @@
 fieldLayouts:
-  3b54177a-9fc7-4e10-8e60-07790c4ccce3:
+  a27e2daf-fd02-4201-aff0-d9c1ce668ed7:
     tabs:
       -
         elementCondition: null
@@ -26,42 +26,30 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: e31781f0-f7e9-48e7-9d12-6fc247534263
+            uid: 91fbfff0-6e84-4130-84bc-07e83023c2f0
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: b037657d-9197-46c5-8666-b2c35c5c4b88 # Uitgelichte blogpost
+            fieldUid: 89aeda29-7de1-4a24-b237-7ca544556d1a # Speluitleg
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2a320cad-eacf-471d-acec-c2ca2d6434e4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6d1b6141-70c2-4c2a-841b-a036eeb10aae # Link naar pagina
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 970e3108-4155-46ed-957e-e7fa0fd79df3
+            uid: 8e32503e-10d5-4bca-9b42-f2a1bb650f35
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 8ff10b1e-87f4-42e6-9fe3-f1a6b4c1d4fc
+        uid: 742bc565-d36b-4342-a2b3-9bc33225a57e
         userCondition: null
-handle: homepage
-hasTitleField: false
-name: Homepage
-section: 9f4915ff-f144-41f9-b90e-4d517b0950bd # Homepage
+handle: default
+hasTitleField: true
+name: Standaard
+section: 926861b1-5ccd-4b3d-985b-614aa962bc5d # Knutselopdrachten
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

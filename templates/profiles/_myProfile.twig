@@ -15,14 +15,30 @@
                 alt: user.friendlyName,
             }) }}
 
-            <a class="profile" href="/mijnProfiel/edit">
+            {# <a class="profile" href="/mijnProfiel/edit">
                 <button type="submit" class="btn form-button form-button-reverse">Profiel bewerken</button>
-            </a>
+            </a> #}
         </div>
 
-        <div class="games__content">
+        <div class="games__content profile__content">
             <h1 class="page-title"> Welkom {{ currentUser }}</h1>
-            
+            {% for profilePageUrl in entry.homepageUrl.all() %}
+                <a href="{{profilePageUrl.linkUrl.one().getUrl()}}" class="profile__link">
+                    <div class="profile__link-item">
+                        <h2 class="profile__link-title">
+                            {{profilePageUrl.linkTitle}}
+                        </h2>
+                    </div>
+                </a>
+
+            {% endfor %}
+            <a href="{{logoutUrl}}" class="profile__link">
+                <div class="profile__link-item">
+                    <h2 class="profile__link-title">
+                        Uitloggen
+                    </h2>
+                </div>
+            </a>
         </div>
     </div>
 
