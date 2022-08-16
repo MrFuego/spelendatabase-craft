@@ -1,0 +1,43 @@
+fieldLayouts:
+  60ae5db2-0f84-4a1b-8e68-e20ddd9558da:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 23340be1-761b-4bfc-a887-75bc20a12a51
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: d43377e7-d5e7-47a0-9daf-5271b32a256c
+        userCondition: null
+handle: searchGames
+hasTitleField: false
+name: 'Spelen zoeken'
+section: 6ca202fc-2d48-46c9-a5a6-487cfa009237
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

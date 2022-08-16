@@ -1,10 +1,11 @@
 {% extends "_layouts/site" %}
 
 {# get all games from the database #}
-{% set games = craft.entries({
+{# {% set games = craft.entries({
     section: 'games',
     isPublic: 'true'
 }).orderBy('postDate DESC') %}
+ #}
 
 {% block content %}
 
@@ -17,6 +18,20 @@
             </form>
         </div>
         <div class="games__content">
+
+            <h1 class="page-title">Zoek resultaten</h1>
+
+            {% set searchQuery = craft.app.request.getParam('q') %}
+            {% set games = craft.entries({
+                section: 'games',
+            })
+            .search(searchQuery)
+            .orderBy('score')
+            .all() %}
+
+            {% if games|length %}
+            <p>{{ games|length }} Resultaten:</p>
+
             {% for game in games %}
                 <a href="{{ game.getUrl() }}" class="games__content-link">
                     <div class="games__content__item">
@@ -50,7 +65,11 @@
                     </div>
                 </a>
             {% endfor %}
+            {% else %}
+            <p>Jouw zoektocht “{{ searchQuery }}” heeft geen resultaten opgeleverd.</p>
+            {% endif %}
+
+
         </div>
     </div>
-
 {% endblock %}
